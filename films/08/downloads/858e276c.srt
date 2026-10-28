@@ -1,0 +1,39 @@
+﻿1
+00:00:05,000 --> 00:00:10,000
+The mountain feels farther.
+
+2
+00:00:10,000 --> 00:00:15,000
+Must I leap across?
+
+3
+00:00:15,000 --> 00:00:20,000
+You looked somewhere closer.
+
+4
+00:00:20,000 --> 00:00:25,000
+The small path was here.
+
+5
+00:00:25,000 --> 00:00:30,000
+I can let my bravado go.
+
+6
+00:00:30,000 --> 00:00:35,000
+This next step is enough.
+
+7
+00:00:35,000 --> 00:00:40,000
+With you, fear grows smaller.
+
+8
+00:00:40,000 --> 00:00:45,000
+Step by step, toward light.
+
+9
+00:00:45,000 --> 00:00:50,000
+Look how far we have come.
+
+10
+00:00:50,000 --> 00:00:55,000
+Courage lives in the next step.

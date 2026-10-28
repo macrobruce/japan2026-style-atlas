@@ -1,0 +1,354 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>分鏡提示詞庫</title><style>body{max-width:1050px;margin:0 auto;padding:28px 22px;background:#f6f3ed;color:#202a2c;
+font:16px/1.85 system-ui,sans-serif;overflow-wrap:anywhere}a{color:#245a5f}img{max-width:100%;height:auto}
+nav{margin-bottom:24px}table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #ccd3ce;padding:8px 12px}
+pre{white-space:pre-wrap;background:#fff;padding:18px;border:1px solid #d7d9d2;border-radius:7px}
+h1,h2,h3{line-height:1.45}code{font-size:.9em}blockquote{border-left:3px solid #a9c3bf;margin-left:0;padding-left:18px}</style></head><body><nav><a href="../index.html">← 返回圖文總覽</a></nav><h1>分鏡風格提示詞庫</h1>
+<p>版本：2026-10-22｜16 張作品、16 組可獨立使用的風格提示詞。S01 對應 01.jpg，以此類推。風格家族與完整比較請見「分析與比較.md」。</p>
+<h2>使用方法</h2>
+<p>先選 <strong>一張 S 編號風格卡</strong>。下方中文與英文是同一風格的兩個版本，通常選一種即可，不必重複貼上。這些是通用自然語言提示詞，不含特定平台權重或參數語法。</p>
+<p>完整分鏡圖片提示詞由四段組成：</p>
+<blockquote>
+<p><strong>角色與場景</strong> ＋ <strong>本鏡頭構圖／瞬間動作</strong> ＋ <strong>風格卡核心提示詞</strong> ＋ <strong>跨鏡頭一致性與畫幅要求</strong></p>
+</blockquote>
+<p>可直接替換的中文模板：</p>
+<pre><code class="language-text">角色與場景：[角色固定描述]，位於[場景與時間]。
+本鏡頭：[景別、機位、主體位置]，呈現[單一清楚動作瞬間]，表情為[情緒]。
+視覺風格：[貼上 Sxx 的中文風格核心]。
+一致性：沿用角色設定圖的臉型、髮型、服裝輪廓與主要配件；沿用同組分鏡的主色、線條與陰影方式。
+畫面：直式 9:16，主體輪廓清晰，依需要保留字幕空間；無新增標題、標誌或浮水印。
+</code></pre>
+<p>英文模板：</p>
+<pre><code class="language-text">Character and setting: [fixed character description] in [place and time].
+Shot: [shot size, camera angle and subject placement], capturing [one clear action beat] with [expression].
+Visual style: [paste one Sxx English style block].
+Continuity: preserve the face shape, hairstyle, clothing silhouette and main accessories from the character sheet; keep the palette, line treatment and shading consistent across the sequence.
+Frame: vertical 9:16, a readable subject silhouette, and caption space where needed. No added title, logo or watermark.
+</code></pre>
+<p>參考圖、角色鎖定、種子或畫幅等功能若工具有提供，可一併使用；文字提示無法保證跨鏡頭一致。不要一口氣混合三四種風格核心。若要混合，先選一個主風格，再只借入另一個可描述特徵，例如「S11 平塗核心＋S05 赭棕青綠配色」，並刪除原有互相矛盾的色彩描述。</p>
+<h2>避免偏離的描述如何使用</h2>
+<p>每卡「避免」是檢查清單。若工具支援負向提示詞欄，可放入對應內容；若不支援，優先把正向要求說清楚，不必機械式加入長串否定詞。不要使用與風格相衝突的萬用詞，例如在 S10 黑白漫畫後附加「photorealistic」，或在 S11 平塗後附加「intricate texture everywhere」。</p>
+<h2>把分鏡圖片與影片運動分開</h2>
+<p>圖片提示詞描述一個清楚的畫面瞬間。影片階段再另外指定：</p>
+<pre><code class="language-text">主體動作：[一個主要動作]。
+鏡頭運動：[固定／緩推／輕微橫移，先選一種]。
+次要運動：[髮尾、衣角、光影等一至兩項]。
+保持：角色外觀、服裝輪廓、主要配件、背景結構、原圖筆觸與配色穩定。
+</code></pre>
+<p>例如「角色剛轉頭看向門口」適合單張分鏡；「先進門、放下包、轉頭、走向窗邊」應拆成數鏡。時長及運動幅度依實際影片工具設定。以下動態建議均未實測。</p>
+<h2>同一場景，對比三種風格</h2>
+<p>固定內容：<strong>一位成年短黑髮信使，穿簡潔外套、肩背斜背包，在車站走廊中停下，手握一封沒有文字的信，回頭望向月台。腰部以上中景，三分之二側身，直式 9:16。</strong><br />
+以下只改風格，人物、場景與機位相同，便於比較。</p>
+<h3>S11：俐落圖形版</h3>
+<pre><code class="language-text">一位成年短黑髮信使，穿簡潔外套、肩背斜背包，在車站走廊中停下，手握一封沒有文字的信，回頭望向月台。腰部以上中景，三分之二側身，直式 9:16。現代平面設計感動漫插畫，大面積鈷藍、朱紅與墨黑構成畫面，淡青白作小面積高明度焦點，乾淨銳利輪廓，精簡色面與少量階梯式陰影，清楚剪影及大面積負空間，細節集中於人物表情。臉型、服裝和信封輪廓清楚，無新增文字、標誌或浮水印。
+</code></pre>
+<h3>S08：都市懸念版</h3>
+<pre><code class="language-text">一位成年短黑髮信使，穿簡潔外套、肩背斜背包，在車站走廊中停下，手握一封沒有文字的信，回頭望向月台。腰部以上中景，三分之二側身，直式 9:16。冷冽都市電影感人物插畫，低彩度冷灰紫與煤黑色調，少量暗紅作視覺焦點，帶手繪痕跡的半寫實塗繪，皮膚明暗柔和，髮絲與衣料局部邊緣銳利，側後方冷色輪廓光，柔化環境背景與細緻顆粒。臉型、服裝和信封輪廓清楚，無新增文字、標誌或浮水印。
+</code></pre>
+<h3>S09：詩性繪畫版</h3>
+<pre><code class="language-text">一位成年短黑髮信使，穿簡潔外套、肩背斜背包，在車站走廊中停下，手握一封沒有文字的信，回頭望向月台。腰部以上中景，三分之二側身，直式 9:16。詩性幻想人物插畫，藍白限色搭配局部深靛藍及金箔般斑駁點綴，保留可見的不透明顏料筆觸與不規則色層，衣角與背景形狀以流動長曲線相連，大片留白與局部裝飾交替，五官精簡清晰，車站環境以少數形狀交代。臉型、服裝和信封輪廓清楚，無新增文字、標誌或浮水印。
+</code></pre>
+<h2>同一風格如何套入連續三鏡</h2>
+<p>選定 S11 後，固定角色描述、完整風格段及畫幅，只替換「本鏡頭」：</p>
+<table>
+<thead>
+<tr>
+<th>鏡頭</th>
+<th>圖片構圖與瞬間動作</th>
+<th>後續影片動作建議</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01 建立空間</td>
+<td>全身遠景，信使走廊中停步，月台在遠處，保留一側負空間</td>
+<td>固定鏡頭；完成停步，衣角微動</td>
+</tr>
+<tr>
+<td>02 情緒轉折</td>
+<td>腰部以上中景，信使將無字信封握在胸前，頭部剛轉向月台</td>
+<td>輕微推近；完成轉頭</td>
+</tr>
+<tr>
+<td>03 細節收束</td>
+<td>手部與信封特寫，外套袖口、斜背包帶局部入鏡</td>
+<td>固定鏡頭；指尖稍微收緊</td>
+</tr>
+</tbody>
+</table>
+<p>三鏡應保持同一時間段、照明方向與服裝配件。這是一組原創示例，不是對原圖劇情的解讀。</p>
+<h2>試生成時的檢查方式</h2>
+<p>先用同一角色、同一場景、同一鏡位測試兩至三個候選風格，再選擇最適合的版本。檢查輪廓、配色、陰影、肌理與留白五項是否符合風格卡；之後才加入新鏡位或影片動作。若結果偏離，先修改一個問題，例如「陰影過軟」或「裝飾過密」，避免一次改動所有描述。</p>
+<p>目前本庫完成的是圖片觀察、分類與提示詞設計，<strong>尚未生成測試圖片或影片</strong>；實際還原度、角色一致性與動作穩定度需以您使用的模型驗證。</p>
+<h2>16 張風格提示詞卡</h2>
+<h3>S01｜朱紅和風裝飾平塗</h3>
+<p>參考：<a href="../assets/references/01.jpg">01.jpg</a>｜A 家族：高對比平塗設計<br />
+配色方向：朱紅、墨黑、金赭、青綠（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">高對比裝飾性人物插畫，清晰且粗細有別的深色輪廓線，大面積朱紅與墨黑色塊，金赭及青綠作局部點綴，乾淨平塗與少量硬邊陰影，修長優雅的人物造型，裝飾紋樣集中於服裝及道具，臉部保持清楚簡潔，具有強烈的平面設計節奏。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Graphic decorative character illustration with crisp, varied dark contours, broad vermilion and ink-black color fields, selective ochre-gold and teal accents, clean flat fills and restrained hard-edged shadows. Elegant elongated forms, ornamental patterns concentrated on clothing and props, a clean readable face, and a strong rhythmic graphic structure.
+</code></pre>
+<p><strong>避免偏離</strong>：避免全面柔焦、寫實皮膚毛孔、均勻鋪滿細節；金色點綴不必自動變成發光特效。</p>
+<pre><code class="language-text">Avoid photographic skin pores, all-over soft focus, uniformly dense detail, and glowing effects on every gold accent.
+</code></pre>
+<p><strong>保持</strong>：粗細有別的深色輪廓、大面積朱紅與墨黑、局部金赭和青綠、少量階梯陰影、裝飾性節奏。<br />
+<strong>可替換</strong>：和服、扇子、花朵與頭飾均屬可替換題材；可換成外套、樂器或都市道具。<br />
+<strong>構圖參考，可依分鏡更換</strong>：直幅中近景；頭飾、長袖與扇面形成斜向交錯，人物臉部周圍保留較乾淨的淺色區域。<br />
+<strong>影片運動建議</strong>：適合人物亮相、扇面開合、衣袖或髮帶緩慢飄動；鏡頭可緩推近。<br />
+<strong>待測試問題</strong>：紋樣與頭飾過密時，連續幀容易出現位置跳動；先固定主要圖案與髮飾數量。</p>
+<h3>S02｜暗金儀式感敘事厚塗</h3>
+<p>參考：<a href="../assets/references/02.jpg">02.jpg</a>｜B 家族：低彩度電影敘事<br />
+配色方向：藍灰、深墨綠、暗金、酒紅（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">帶有儀式感的電影式人物插畫，低彩度藍灰與深墨綠暗部，局部暗金材質和極少量酒紅點綴，細緻輪廓與柔和塗繪體積並用，衣料具重量及細密裝飾，柔硬邊緣交替，前景遮擋與柔化背景建立空間，克制表情與安靜緊張感。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Cinematic character illustration with a ceremonial mood, desaturated blue-gray and deep green-black shadows, selective antique-gold material accents and a trace of burgundy. Fine contours combined with softly painted volume, weighty decorated fabric, alternating soft and sharp edges, foreground occlusion and subdued background depth, restrained expressions and quiet tension.
+</code></pre>
+<p><strong>避免偏離</strong>：避免霓虹泛光、鮮豔全色域、純平塗；不要把畫中多隻手當成每個場景都必須出現的元素。</p>
+<pre><code class="language-text">Avoid neon bloom, uniformly saturated colors, purely flat rendering, and unnecessary extra hands around the subject.
+</code></pre>
+<p><strong>保持</strong>：低彩度冷暗底色、局部暗金材質、細線與塗繪體積並用、前景遮擋、克制表情。<br />
+<strong>可替換</strong>：金鶴刺繡、手套、花朵與服裝可替換；被圍繞的人物關係屬敘事構圖選項。<br />
+<strong>構圖參考，可依分鏡更換</strong>：人物偏轉並回望；周圍手臂造成包圍與引導，前景、人物、背景形成分層。<br />
+<strong>影片運動建議</strong>：適合衣料整理、緩慢轉頭、手部細節與儀式片段；可從金色衣紋切到眼神。<br />
+<strong>待測試問題</strong>：多人手部交疊及刺繡容易漂移；分鏡中可將複雜交接拆成單一動作與局部特寫。</p>
+<h3>S03｜冷白細密裝飾幻想</h3>
+<p>參考：<a href="../assets/references/03.jpg">03.jpg</a>｜C 家族：細密裝飾幻想<br />
+配色方向：瓷白、銀灰、灰綠、墨黑（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">精密裝飾性幻想插畫，冷白、銀灰與淡灰綠的克制配色，極細輪廓與柔和漸層塑造圓潤體積，瓷質般細膩表面，精緻重複紋理與珠飾般微小亮點，盤繞曲線和植物性裝飾形成層次，人物五官清楚，氣氛安靜、神秘而華麗。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Intricate ornamental fantasy illustration in restrained porcelain white, silver-gray and pale sage. Delicate contours and soft gradients describe rounded forms, with smooth porcelain-like surfaces, precise repeating textures and tiny pearl-like highlights. Interwoven curves and botanical ornament create layered detail around a clearly readable face, producing a quiet, mysterious elegance.
+</code></pre>
+<p><strong>避免偏離</strong>：避免粗黑外框、強烈霓虹、塑膠般過度高光，以及細節覆蓋眼睛和嘴部。</p>
+<pre><code class="language-text">Avoid heavy black outlines, neon colors, harsh plastic shine, and ornament obscuring the eyes or mouth.
+</code></pre>
+<p><strong>保持</strong>：冷白銀灰限色、細緻描線、柔和體積、精密重複紋理、盤繞曲線、安靜而奇異。<br />
+<strong>可替換</strong>：蛇、花、和服及珠飾可替換成藤蔓、陶瓷構件、羽毛或其他裝飾母題。<br />
+<strong>構圖參考，可依分鏡更換</strong>：近乎滿版的直幅裝飾肖像，盤繞曲線反覆穿插；臉部在大量細節中形成主要情緒焦點。<br />
+<strong>影片運動建議</strong>：適合緩推近、眨眼、枝葉微動與飾物輕擺；可用分層視差展示深度。<br />
+<strong>待測試問題</strong>：鱗片、繩結與多條盤繞物容易改變拓撲；宜降低獨立移動物件數量，避免同時大幅纏繞。</p>
+<h3>S04｜冷綠珠寶質感肖像</h3>
+<p>參考：<a href="../assets/references/04.jpg">04.jpg</a>｜D 家族：時裝與人物肖像<br />
+配色方向：深青綠、暖膚色、棕黑、亮銀（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">精緻時裝肖像插畫，介於動漫造型與寫實體積之間，暖膚色對比深青綠背景，細密髮絲與睫毛，皮膚以柔和明暗塑形，金屬配件具有小而銳利的銀白高光，冷暖材質對照，五官清晰，表情克制而有吸引力，背景簡潔。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Refined fashion portrait illustration balancing anime stylization with naturalistic volume. Warm skin tones against deep teal, finely separated hair strands and eyelashes, softly modeled skin, and small sharp silver-white highlights on metallic accessories. Clear facial features, restrained expression, contrasting material finishes, and an uncluttered background.
+</code></pre>
+<p><strong>避免偏離</strong>：避免全臉過曝、所有材質同樣光滑、過度磨皮、讓珠寶細節搶過眼神。</p>
+<pre><code class="language-text">Avoid blown-out faces, identical gloss on every material, excessive skin smoothing, and jewelry overpowering the eyes.
+</code></pre>
+<p><strong>保持</strong>：暖膚與冷綠背景對照、細髮絲、柔和皮膚體積、銳利局部金屬高光、近距離凝視。<br />
+<strong>可替換</strong>：短髮、珠寶、手套與眼睛顏色可替換；保留材質之間的光澤差異。<br />
+<strong>構圖參考，可依分鏡更換</strong>：緊裁切頭肩像；雙手靠近臉側，銀色材質形成面部框架。<br />
+<strong>影片運動建議</strong>：適合美妝、珠寶、人物情緒特寫；微轉頭或一隻手輕觸耳飾即可。<br />
+<strong>待測試問題</strong>：鏈節與多層珠寶容易閃爍；固定主項鍊輪廓，遠景可減少鏈節細節。</p>
+<h3>S05｜赭棕青綠復古時裝</h3>
+<p>參考：<a href="../assets/references/05.jpg">05.jpg</a>｜D 家族：時裝與人物肖像<br />
+配色方向：赭棕、橘紅、深青綠、珊瑚膚色（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">復古時裝編輯插畫，赭棕背景搭配深青綠及橘紅焦點，人物結構清楚，髮束以雕塑般的大塊弧面概括，臉部與手部採用幾何化硬邊明暗，局部保留輕微顆粒與筆觸，配件有克制的高光，整體沉著、俐落且帶時髦感。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Retro fashion editorial illustration with an ochre-brown ground, deep teal and focused orange-red accents. Clearly structured anatomy, sculptural grouped hair shapes, geometric hard-edged light and shadow on the face and hands, subtle local grain and brush texture, and restrained accessory highlights. Composed, sharp and stylish.
+</code></pre>
+<p><strong>避免偏離</strong>：避免霓虹漸層、全面柔焦、過細髮絲與攝影式皮膚質感。</p>
+<pre><code class="language-text">Avoid neon gradients, all-over soft focus, excessively fine hair strands, and photographic skin texture.
+</code></pre>
+<p><strong>保持</strong>：赭棕與青綠對照、橘紅焦點、雕塑般髮束、幾何明暗面、少量顆粒、簡單背景。<br />
+<strong>可替換</strong>：墨鏡形狀、髮色、性別、西裝與首飾可換；保留大形、配色比例與硬邊陰影。<br />
+<strong>構圖參考，可依分鏡更換</strong>：正面半身肖像，手、墨鏡及眉眼構成中央視覺節點；垂直西裝細條紋穩定畫面。<br />
+<strong>影片運動建議</strong>：適合配件展示、調整眼鏡、抬眼、時裝換裝與節拍切鏡。<br />
+<strong>待測試問題</strong>：墨鏡和手指遮擋面部時容易改變五官；先建立沒有遮擋的角色基準圖。</p>
+<h3>S06｜青白網點斑駁幻想</h3>
+<p>參考：<a href="../assets/references/06.jpg">06.jpg</a>｜E 家族：限色線稿與印刷肌理<br />
+配色方向：紙白、青綠、灰藍、墨黑（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">青白限色幻想漫畫插畫，紙白與青綠為主，灰藍作陰影，粗細交錯的深色墨線，大片淺色形體與精細內部線條並存，局部半色調網點、斑駁剝落般色面和輕微印刷肌理，造型可愛而帶奇異感，視覺層次清楚。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Limited-palette fantasy manga illustration in paper white and turquoise with blue-gray shadows. Varied dark ink lines combine broad pale shapes with fine internal drawing. Selective halftone shading, distressed color patches and subtle print texture create layered surfaces, with appealing stylized forms and a slightly uncanny atmosphere.
+</code></pre>
+<p><strong>避免偏離</strong>：避免全圖髒污化、暗黑厚塗、光滑 3D 塑膠質感；肌理應留在局部。</p>
+<pre><code class="language-text">Avoid uniform grime, dark heavy painting, smooth 3D plastic rendering, and texture covering every surface.
+</code></pre>
+<p><strong>保持</strong>：青白限色、粗細交錯墨線、網點灰階、局部斑駁、白色大形、略帶脆弱感的可愛造型。<br />
+<strong>可替換</strong>：羽翼、短髮與周圍構件可替換；保留線稿、印刷灰階與不均勻色面之間的層次。<br />
+<strong>構圖參考，可依分鏡更換</strong>：直幅旋轉式包圍構圖，羽翼與長條形狀從四周指向角色；細節密集但明度整體偏高。<br />
+<strong>影片運動建議</strong>：適合奇異世界片頭、羽片輕動、視差旋轉；紙張與網點肌理可在後製固定疊加。<br />
+<strong>待測試問題</strong>：網點、細線與斑駁紋理可能逐幀閃爍；若影片工具不穩，生成較乾淨底圖再加固定肌理。</p>
+<h3>S07｜粉彩糖果魔法</h3>
+<p>參考：<a href="../assets/references/07.jpg">07.jpg</a>｜F 家族：糖果色魔法少女<br />
+配色方向：櫻粉、薄荷青、薰衣草紫、奶油黃（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">高明度糖果粉彩動漫插畫，櫻粉、薄荷青、淡紫與奶油黃配色，乾淨深色輪廓，圓潤人物造型，明亮玻璃珠般眼睛，多層小高光，柔和的彩色賽璐璐陰影，飄逸髮束與輕盈裝飾，少量星形閃光，氣氛甜美、歡快而夢幻。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">High-key candy-pastel anime illustration in blossom pink, mint cyan, pale lavender and cream yellow. Clean dark contours, rounded character design, luminous glass-like eyes with layered small highlights, gentle colored cel shadows, flowing hair shapes and light decorative accents. A few star-shaped sparkles support a sweet, buoyant, dreamlike mood.
+</code></pre>
+<p><strong>避免偏離</strong>：避免低調黑暗照明、髒灰陰影、全身過度發光，以及裝飾遮住角色表情。</p>
+<pre><code class="language-text">Avoid low-key dark lighting, muddy gray shadows, excessive all-over glow, and decoration obscuring expressions.
+</code></pre>
+<p><strong>保持</strong>：粉青紫高明度配色、清楚輪廓、圓潤五官、玻璃珠般眼睛、彩色陰影、節制星光。<br />
+<strong>可替換</strong>：雙人、魔法杖、髮辮和制服可替換；甜美感不必依賴原圖角色或固定道具。<br />
+<strong>構圖參考，可依分鏡更換</strong>：雙人近景以傾斜頭部和環繞髮束連接；裝飾密度高，但用明度與輪廓維持辨識。<br />
+<strong>影片運動建議</strong>：適合輕快轉身、變身揭示、雙人互動和星光點綴；以一個主要動作搭配少量飾物運動。<br />
+<strong>待測試問題</strong>：雙人髮辮交疊與大量小飾品容易串位；固定角色各自髮色、配件及畫面位置。</p>
+<h3>S08｜冷灰都市暗調電影感</h3>
+<p>參考：<a href="../assets/references/08.jpg">08.jpg</a>｜B 家族：低彩度電影敘事<br />
+配色方向：煤黑、冷灰紫、灰膚色、暗紅（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">冷冽都市電影感人物插畫，低彩度冷灰紫與煤黑色調，少量暗紅作視覺焦點，帶手繪痕跡的半寫實塗繪，皮膚明暗柔和，髮絲與衣料局部邊緣銳利，側後方冷色輪廓光，柔化環境背景與細緻顆粒，氛圍疏離、安靜而帶懸念。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Moody urban cinematic character illustration in desaturated cool gray-violet and charcoal black with sparse dark-red accents. Semi-realistic painted forms retain visible brushwork, softly modeled skin, selective sharp hair and fabric edges, cool side-back rim light, a softened environmental background and fine grain. Detached, quiet and suspenseful.
+</code></pre>
+<p><strong>避免偏離</strong>：避免滿版霓虹、純黑吞掉所有細節、過度銳化與油亮塑膠皮膚。</p>
+<pre><code class="language-text">Avoid all-over neon, featureless crushed blacks, excessive sharpening, and oily plastic skin.
+</code></pre>
+<p><strong>保持</strong>：冷灰低彩度、深黑大形、暗紅小焦點、柔化背景、局部輪廓光、可見細顆粒與筆觸。<br />
+<strong>可替換</strong>：紅眼、刺青、酒杯和室內位置皆可替換；保留環境光與人物明暗關係。<br />
+<strong>構圖參考，可依分鏡更換</strong>：直幅中景；手臂、酒杯及流下的液體形成斜向動線，人物大暗面與背景亮灰區分離。<br />
+<strong>影片運動建議</strong>：適合倒水、抬眼、緩慢轉身、杯子反光或都市懸疑片段。<br />
+<strong>待測試問題</strong>：透明杯體、液流和刺青同時運動容易失真；可拆成手部倒液特寫與人物反應鏡頭。</p>
+<h3>S09｜藍白金箔感流動繪畫</h3>
+<p>參考：<a href="../assets/references/09.jpg">09.jpg</a>｜G 家族：繪畫性留白幻想<br />
+配色方向：留白、水藍、深靛藍、斑駁金（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">詩性幻想人物插畫，藍白限色搭配局部深靛藍及金箔般斑駁點綴，保留可見的不透明顏料筆觸與不規則色層，形體以流動長曲線相連，大片乾淨留白與密集裝飾交替，五官精簡清晰，氣氛輕盈、靜謐而有漂浮感。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Lyrical fantasy character illustration in blue and white, with selective deep indigo and mottled gold-leaf-like accents. Visible opaque-paint brushwork and irregular color layers, forms connected by long flowing curves, generous clean negative space alternating with concentrated ornament, and simplified readable facial features. Airy, quiet and gently suspended.
+</code></pre>
+<p><strong>避免偏離</strong>：避免滿版細節、均勻金屬鍍膜、攝影寫實與無處不在的發光粒子。</p>
+<pre><code class="language-text">Avoid filling all negative space, uniform metallic coating, photographic realism, and ubiquitous glowing particles.
+</code></pre>
+<p><strong>保持</strong>：藍白限色、局部深靛藍、金箔般斑駁點綴、可見塗繪筆觸、大片留白、流動長曲線。<br />
+<strong>可替換</strong>：植物形狀、服飾、長髮與橫向姿勢可替換；轉為直幅時需重排曲線方向。<br />
+<strong>構圖參考，可依分鏡更換</strong>：人物與衣髮呈側向伸展，橫向流動曲線主導；留白與密集區形成明顯疏密節奏。<br />
+<strong>影片運動建議</strong>：適合長髮、衣料或葉片緩慢漂移；可讓鏡頭沿曲線移動。<br />
+<strong>待測試問題</strong>：細長形狀容易纏結；09 原圖為橫幅，直式影片應重新構圖，不能直接裁切後期待保留原有節奏。</p>
+<h3>S10｜黑白神怪動勢漫畫</h3>
+<p>參考：<a href="../assets/references/10.jpg">10.jpg</a>｜H 家族：黑白敘事漫畫<br />
+配色方向：紙白、淺網灰、深網灰、純黑（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">高張力黑白敘事漫畫，純黑與紙白構成主要明暗，灰階由半色調網點與精細排線建立，粗細墨線交替，人物與環境具有清楚剪影，材質細節依視覺重點集中，弧線和斜向節奏強烈，畫面有尺度感與戲劇張力。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Dramatic black-and-white narrative manga with bold ink-black masses and paper-white highlights. Halftone screens and fine hatching build intermediate values, varied ink line weights define clear silhouettes, and texture is concentrated around focal areas. Curved and diagonal rhythms create a strong sense of scale and dramatic tension.
+</code></pre>
+<p><strong>避免偏離</strong>：避免只是彩圖去色、均勻灰霧、照片灰階與線條密到無法辨識動作。</p>
+<pre><code class="language-text">Avoid merely desaturating a color painting, uniform gray haze, photographic grayscale, and line density that obscures the action.
+</code></pre>
+<p><strong>保持</strong>：純黑白基調、網點階調、精細排線、粗細線對比、強烈剪影、尺度差與弧線動勢。<br />
+<strong>可替換</strong>：蛇龍、武器、繩索與傳統衣裝均可替換；動作幅度和鏡頭傾斜是可選的分鏡設定。<br />
+<strong>構圖參考，可依分鏡更換</strong>：人物位於巨大生物之間，尺度落差強；彎曲獸身與大斜線形成包圍、拉力與速度感。<br />
+<strong>影片運動建議</strong>：適合動作高潮、神怪揭示、慢推加局部動態，或以關鍵畫格剪輯呈現。<br />
+<strong>待測試問題</strong>：多條獸身、繩索和密集排線在大幅動作中容易改形；預估以分段動作或有限動畫較容易控制。</p>
+<h3>S11｜鈷藍朱紅極簡平塗</h3>
+<p>參考：<a href="../assets/references/11.jpg">11.jpg</a>｜A 家族：高對比平塗設計<br />
+配色方向：鈷藍、朱紅、墨黑、淡青白（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">現代平面設計感動漫插畫，大面積鈷藍、朱紅與墨黑構成畫面，淡青白作小面積高明度焦點，乾淨銳利輪廓，精簡色面與少量階梯式陰影，清楚剪影及大面積負空間，細節集中於人物表情，整體俐落、冷靜而有節奏。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Modern graphic anime illustration built from broad cobalt-blue, vermilion and ink-black shapes, with pale cyan-white focal accents. Crisp contours, simplified flat color planes, a small number of cel-shadow steps, clear silhouettes and generous negative space. Detail concentrates on expression, producing a sharp, poised visual rhythm.
+</code></pre>
+<p><strong>避免偏離</strong>：避免繁密花紋、厚塗毛孔、所有色面加入漸層，以及背景填滿雜物。</p>
+<pre><code class="language-text">Avoid dense ornament, heavily painted skin pores, gradients on every shape, and clutter filling the background.
+</code></pre>
+<p><strong>保持</strong>：鈷藍為主、朱紅對比、黑色支撐、淡色臉部焦點、少量階梯陰影、大片負空間。<br />
+<strong>可替換</strong>：髮色、服裝與飄帶可替換；可保留同樣色彩配置而改換角色或場景。<br />
+<strong>構圖參考，可依分鏡更換</strong>：橫幅，人物偏右、左側留出大色面；髮帶、衣料及前景形狀建立斜向動勢。<br />
+<strong>影片運動建議</strong>：適合音樂短片、角色標誌性出場、髮帶或布面飄動、節拍式色塊轉場。<br />
+<strong>待測試問題</strong>：較少紋理有利於簡化畫面，但臉部與色塊邊界仍需檢查；原圖橫幅改直幅時應保留一側負空間。</p>
+<h3>S12｜俯視叛逆時裝編輯</h3>
+<p>參考：<a href="../assets/references/12.jpg">12.jpg</a>｜D 家族：時裝與人物肖像<br />
+配色方向：灰藍白、深黑綠、粉膚、冰青（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">帶叛逆氣質的時裝編輯插畫，乾淨細輪廓與有限的賽璐璐體積，深黑綠服裝形成大膽雕塑式剪影，淡灰藍背景，粉膚色與冰青小配件對照，裝飾幾何圖形稀疏而規律，五官銳利，整體簡潔、時髦並帶輕微超現實感。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Rebellious fashion editorial illustration with clean fine contours and restrained cel-modeled volume. Deep green-black clothing forms a bold sculptural silhouette against pale blue-gray, balanced by pink skin tones and small icy-cyan accessories. Sparse rhythmic geometric accents, sharp facial features, and a clean, stylish, slightly surreal presentation.
+</code></pre>
+<p><strong>避免偏離</strong>：避免所有暗部完全無層次、繁雜場景、霓虹燈污染；不要每一鏡都強制同一俯視角。</p>
+<pre><code class="language-text">Avoid featureless dark clothing, busy environments, pervasive neon lighting, and forcing the same overhead angle on every shot.
+</code></pre>
+<p><strong>保持</strong>：大黑色時裝剪影、淡灰藍背景、粉膚冷暖對比、乾淨輪廓、有限體積、規律圖形點綴。<br />
+<strong>可替換</strong>：尖刺、泡袖、星星、椅子與俯視角度可依場景調整；俯視屬構圖模組。<br />
+<strong>構圖參考，可依分鏡更換</strong>：強烈俯視，頭肩比例受透視放大，人物直視鏡頭；右側椅子提供空間及不對稱平衡。<br />
+<strong>影片運動建議</strong>：適合時裝亮相、走近鏡頭、抬頭看鏡頭、肩部姿態與圖形後製動效。<br />
+<strong>待測試問題</strong>：尖刺數量和泡袖輪廓容易改變；角色設定圖要固定服裝結構，背景星形可後製添加。</p>
+<h3>S13｜霧灰柔光情感敘事</h3>
+<p>參考：<a href="../assets/references/13.jpg">13.jpg</a>｜B 家族：低彩度電影敘事<br />
+配色方向：暖灰、灰粉、灰藍、深炭綠（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">柔光情感敘事插畫，低彩度暖灰、灰粉與灰藍色調，細而略帶鬆動的線稿結合薄層塗繪，皮膚及衣料明暗柔和，漫射側光、低對比和輕微顆粒，清晰的關鍵手勢與表情，其他邊緣適度柔化，氣氛親密、安靜而帶餘韻。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Intimate narrative illustration in desaturated warm gray, dusty rose and gray-blue. Fine, slightly loose linework combines with thin painted layers, softly modeled skin and fabric, diffused side light, low contrast and subtle grain. Key gestures and expressions stay readable while secondary edges soften, creating a quiet, tender emotional afterglow.
+</code></pre>
+<p><strong>避免偏離</strong>：避免用過量哭泣符號代替情緒、過強炫光、深黑硬陰影與所有細節同等清晰。</p>
+<pre><code class="language-text">Avoid excessive symbolic tears, overpowering lens flare, harsh black shadows, and equally sharp detail everywhere.
+</code></pre>
+<p><strong>保持</strong>：低彩度暖灰與灰藍、細而略鬆的線稿、薄層塗繪、柔散光、柔硬邊緣、細膩手勢。<br />
+<strong>可替換</strong>：病床、面罩、投影與雙人設定可替換；此風格可用於重逢、離別、陪伴等原創場景。<br />
+<strong>構圖參考，可依分鏡更換</strong>：傾斜俯視雙人構圖，床緣、管線與手臂將視線引向接觸處；半透明畫面暗示回憶或投影，但具體故事不明。<br />
+<strong>影片運動建議</strong>：適合手指輕握、呼吸、微微靠近、窗光變化與記憶切鏡；節奏可放慢。<br />
+<strong>待測試問題</strong>：雙人接觸及半透明疊影容易混合五官；回憶畫面宜分鏡剪接或後製疊加，避免同次生成過多人物層。</p>
+<h3>S14｜柔彩復古都市科幻</h3>
+<p>參考：<a href="../assets/references/14.jpg">14.jpg</a>｜I 家族：復古都市科幻漫畫<br />
+配色方向：奶油黃、灰紫、薄荷綠、桃紅（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">柔彩復古都市漫畫插畫，略帶手繪不規則感的黑色墨線，奶油黃、灰紫、薄荷綠與少量桃紅平塗，少量硬邊陰影，清楚但不過度精密的建築透視，日常生活細節中加入簡潔奇異設計，細微紙感與套色感，氣氛輕鬆、古怪而有生活感。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Soft-color retro urban comic illustration with slightly irregular hand-inked black contours. Opaque cream yellow, dusty lavender, mint green and sparse hot-pink accents, restrained hard-edged shadows, and clear but lightly simplified architectural perspective. Everyday details mix with concise odd inventions, subtle paper and print character, and a relaxed, eccentric lived-in mood.
+</code></pre>
+<p><strong>避免偏離</strong>：避免過密高科技面板、寫實攝影背景、重度霓虹泛光；生成分鏡時不加入無意義大標題。</p>
+<pre><code class="language-text">Avoid dense technological panels, photographic backgrounds, heavy neon bloom, and unsolicited large lettering.
+</code></pre>
+<p><strong>保持</strong>：略有手感的墨線、柔和不透明套色、少量硬邊陰影、可信街景透視、淡淡復古印刷感。<br />
+<strong>可替換</strong>：科幻裝備、站牌、街道及雙人配置可替換；原圖手寫標題不屬必需風格元素。<br />
+<strong>構圖參考，可依分鏡更換</strong>：前大後小的雙人街景，垂直建築線與側向透視構成深度；前景臉部清楚，背景以概括細節交代世界。<br />
+<strong>影片運動建議</strong>：適合城市漫遊、人物對話、小道具互動、日常科幻短故事。<br />
+<strong>待測試問題</strong>：招牌文字與街景線條可能跳動；需要可讀文字時可後製排版，先固定主要建築與道具輪廓。</p>
+<h3>S15｜冷色怪誕透視漫畫</h3>
+<p>參考：<a href="../assets/references/15.jpg">15.jpg</a>｜J 家族：誇張透視流行漫畫<br />
+配色方向：奶白、薄荷青、灰藍紫、少量洋紅（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">帶怪誕幽默的動感漫畫插畫，俐落深色墨線與硬邊賽璐璐陰影，奶白、薄荷青與灰藍紫為主，少量洋紅點綴，尖銳剪影、誇張表情與概括形體，選擇性使用輕微色邊，視覺充滿近距離透視張力，保持角色和道具可辨。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">Dynamic comic illustration with mischievous uncanny humor, crisp dark ink contours and hard-edged cel shading. Cream white, mint cyan and gray-blue violet dominate with sparse magenta accents. Angular silhouettes, exaggerated expressions, simplified forms and selective subtle color fringing create punchy close-range perspective energy while keeping characters and props readable.
+</code></pre>
+<p><strong>避免偏離</strong>：避免真實血腥質感、滿版模糊、失控魚眼畸變與每條邊都加粗重色差。</p>
+<pre><code class="language-text">Avoid photorealistic gore, all-over blur, uncontrolled fisheye distortion, and heavy color fringing on every edge.
+</code></pre>
+<p><strong>保持</strong>：俐落墨線、奶白與冷灰藍紫、薄荷陰影、硬邊賽璐璐、尖銳輪廓、大表情、透視張力。<br />
+<strong>可替換</strong>：護目鏡、醫療服裝、工具、縫線和尖牙皆可替換；保留誇張造型與鏡頭張力。<br />
+<strong>構圖參考，可依分鏡更換</strong>：近距離廣角般誇張透視，前景手掌與工具直逼觀者；背景建築斜線強化鏡頭傾斜。<br />
+<strong>影片運動建議</strong>：適合怪誕喜劇角色出場、道具展示、快速靠近鏡頭與誇張反應。<br />
+<strong>待測試問題</strong>：手指透視、工具與護目鏡反光容易變形；動作可拆成遠處展示、接近、停格三段。</p>
+<h3>S16｜高彩派對流行漫畫</h3>
+<p>參考：<a href="../assets/references/16.jpg">16.jpg</a>｜J 家族：誇張透視流行漫畫<br />
+配色方向：電藍、青綠、亮粉、純黑（描述性配色；非精確取樣）</p>
+<p><strong>中文風格核心</strong></p>
+<pre><code class="language-text">高彩度流行漫畫插畫，電藍、青綠、亮粉與強烈黑白對比，銳利深色輪廓，乾淨平塗及兩到三階硬邊陰影，尖銳而有彈性的造型，誇張表情，貼紙般的圖形點綴與彩色弧線，畫面節奏強烈，帶玩心、舞台感與張揚能量。
+</code></pre>
+<p><strong>English style block</strong></p>
+<pre><code class="language-text">High-saturation pop-comic illustration in electric blue, teal and bright pink with strong black-white contrast. Sharp dark contours, clean flat fills and two or three hard-edged cel-shadow levels, angular yet elastic forms and exaggerated expressions. Sticker-like graphic accents and colorful arcs create a playful, theatrical, high-energy rhythm.
+</code></pre>
+<p><strong>避免偏離</strong>：避免粉彩化所有顏色、柔焦厚塗、亮片遮臉與把畫面塞到沒有辨識空間。</p>
+<pre><code class="language-text">Avoid turning the whole palette pastel, softly blurred painting, sparkles covering faces, and clutter destroying readability.
+</code></pre>
+<p><strong>保持</strong>：電藍青綠亮粉、強黑白對比、銳利輪廓、硬邊陰影、誇張表情、貼紙般圖形與節奏。<br />
+<strong>可替換</strong>：愛心、尖牙、手套、西裝與尖髮可替換；前景雙手屬特定鏡頭選項。<br />
+<strong>構圖參考，可依分鏡更換</strong>：直幅近景，兩隻放大的前景手掌圍住臉部；大量弧線與貼紙形狀從邊緣填入。<br />
+<strong>影片運動建議</strong>：適合節拍短片、角色表演、手勢挑戰、快速推近、貼紙圖形轉場。<br />
+<strong>待測試問題</strong>：近景雙手遮臉及高密圖形容易搶焦；固定臉部輪廓，背景貼紙可分層後製。</p></body></html>

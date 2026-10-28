@@ -1,0 +1,666 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整製作規格</title><style>body{max-width:1050px;margin:0 auto;padding:28px 22px;background:#f6f3ed;color:#202a2c;
+font:16px/1.85 system-ui,sans-serif;overflow-wrap:anywhere}a{color:#245a5f}img{max-width:100%;height:auto}
+nav{margin-bottom:24px}table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #ccd3ce;padding:8px 12px}
+pre{white-space:pre-wrap;background:#fff;padding:18px;border:1px solid #d7d9d2;border-radius:7px}
+h1,h2,h3{line-height:1.45}code{font-size:.9em}blockquote{border-left:3px solid #a9c3bf;margin-left:0;padding-left:18px}</style></head><body><nav><a href="../index.html">← 返回圖文總覽</a></nav><h1>02｜慢慢，陪你回家 — 完整製作規格</h1>
+<p>更新日期：2026-10-23<br />
+已確認：依十部原方案順序製作第 02 部。全片 60 秒＝片頭 5 秒＋10 鏡各 5 秒＋片尾 5 秒。<br />
+本輪交付：完整分鏡與雙語文字、3 張角色設定／比例圖、2 張海報、10 張分鏡、10 組雙語分鏡圖像提示詞、12 組雙語影片提示詞、中英文 SRT。影片部分交付生成提示詞，動態影片與剪輯成片尚未生成。</p>
+<p><a href="../index.html">15 張圖像總覽</a>｜<a >分鏡與提示詞 JSON</a>｜<a >片頭片尾提示詞 JSON</a>｜<a >角色設定提示詞</a>｜<a >資產清單</a>｜<a href="downloads/337adbc8.srt">中文字幕</a>｜<a href="downloads/2aead17d.srt">英文字幕</a>｜<a >十部進度</a></p>
+<h2>一、確認方案內容</h2>
+<ol>
+<li><strong>風格與主題</strong>：S13｜霧灰柔光情感敘事，B 家族低彩度電影敘事。陪伴、耐心與珍惜當下，以步伐、視線、傘的位置與手心接觸承載情緒。</li>
+<li><strong>主要角色</strong>：少女小禾（Xiaohe），16 歲；年老柴犬阿栗（A-Li），14 歲。固定兩位主角。</li>
+<li><strong>劇情大綱</strong>：小雨將至，小禾急著陪阿栗回家，老犬卻在熟悉的水窪旁停步。她回身蹲下，才看見水面上映著一人一犬相伴的身影。明白牠的停留後，小禾把傘移向牠那側，縮短自己的步幅。兩人沿同一條雨巷並肩前行，抵達暖燈門廊；老犬把臉靠進她的手心，回家的路也因此成為陪伴的一部分。</li>
+<li><strong>劇情要點</strong>：急行與慢步不同步 → 停下等候 → 蹲到牠的高度 → 發現共同倒影 → 分享傘下空間 → 並肩慢行 → 暖燈下安心相伴。</li>
+<li><strong>場景</strong>：同一段住宅短巷、路邊水窪、巷尾門廊。灰泥牆與深木圍籬、濕石板路、深木門與右側一盞琥珀壁燈。前段灰藍雨色，末段增加琥珀暖光。</li>
+</ol>
+<p>情感節奏：一點急切 → 察覺停步 → 理解與柔軟 → 用動作照顧 → 安心。老犬保持自然年老的外觀與緩步，沒有突然康復、返老還童或悲劇告別。第一鏡即有稀疏初雨，片頭與正片 01–10 的雨傘維持張開；片尾省略到家後的時間，傘已收起靠在門框，兩者坐臥相伴。收傘動作不另占鏡頭，總長仍為 60 秒。</p>
+<h2>二、風格與雙語文字定稿</h2>
+<p>S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。</p>
+<p>S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.</p>
+<p>參考：<a >13.jpg</a>、<a >既有風格提示詞庫 S13</a>、<a >風格分析</a>。取用低彩度、細線、薄塗與柔光語彙，另行創作雨巷故事；不沿用參考圖的病床、醫療物件或人物。</p>
+<table>
+<thead>
+<tr>
+<th>欄位</th>
+<th>中文</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大標題</td>
+<td>慢慢，陪你回家</td>
+<td>Home at Your Pace</td>
+</tr>
+<tr>
+<td>副標題</td>
+<td>路可以慢，陪伴不缺席。</td>
+<td>Take your time. I'll stay by your side.</td>
+</tr>
+</tbody>
+</table>
+<p>英文片名採「依你的步調回家」的意譯，保留陪伴與耐心。副標題使用簡短祈使句與陪伴承諾，語法自然。兩張海報只含上述四段文字，中文逗號與句號保留；英文使用 I'll，海報字型採彎引號呈現時語義相同。</p>
+<h2>三、角色設定與一致性</h2>
+<p>小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。</p>
+<p>Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.</p>
+<table>
+<thead>
+<tr>
+<th>圖片</th>
+<th>內容</th>
+<th>條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../assets/character_he.webp">小禾四視角</a></td>
+<td>正面、45 度側面、側面、背面；另有小幅雨傘配件參考</td>
+<td>四個全身像，服裝不被傘遮住</td>
+</tr>
+<tr>
+<td><a href="../assets/character_ali.webp">阿栗四視角</a></td>
+<td>正面、45 度側面、側面、背面</td>
+<td>全身、完整四肢、三角耳、白口鼻、捲尾</td>
+</tr>
+<tr>
+<td><a href="../assets/character_scale.webp">共同體型設定</a></td>
+<td>一位少女與一隻老柴犬並排</td>
+<td>同地面、同景深；犬肩約在少女膝部以下</td>
+</tr>
+</tbody>
+</table>
+<p>三張為白背景、均勻光線、橫式 16:9 構圖。公分值為設計標尺，繪畫比例以定稿共同比例圖為優先；鏡頭遠近與透視會改變畫面中的表觀大小，不能以不同景深的像素高度直接比值。阿栗維持成年小型柴犬，不畫成幼犬或巨犬。</p>
+<p><strong>生成使用方式</strong>：必須實際附上三張角色／比例參考圖；提示詞中的檔名不是自動載入機制。共同比例圖控制大小，獨立設定圖控制臉、服裝、毛色與花紋。影片另使用對應分鏡圖作首幀，避免重新猜測構圖。</p>
+<h3>道具與場景連續性</h3>
+<ul>
+<li>同一把灰綠開傘、深灰傘桿與黑色 J 把手；小禾始終右手持傘。近景或低機位可以合理裁掉傘，畫外道具不強行加入。</li>
+<li>01–06 傘以少女為中心；07 右手把傘移向犬側；08–09 保留照顧犬側的位置。</li>
+<li>正片 10：右手繼續持開傘，左手輕托阿栗臉頰。新版片尾為到家後記：傘已收起倚在右側門框，小禾坐在門檻內、雙手放膝上，阿栗趴在靴旁；不重複蹲下撫臉。</li>
+<li>雨衣帽子全程放下，固定灰粉雨衣、灰藍長褲、炭灰雨靴。阿栗保留白口鼻、灰白眉、捲尾與深灰綠項圈。</li>
+<li>05 只取一人一犬的臉部倒影近景，頸肩朝上、頭頂朝下；所有腿腳（含倒影）留在畫外，不出現第二組倒影、身體被水線截斷或水下角色。</li>
+<li><a href="../assets/shot_01.webp">01 雨巷圖</a>作空間與雨色參考；<a href="../assets/shot_09.webp">09 門廊圖</a>作門、燈與屋簷參考。門右壁燈不換側，不增加第二個門廊。</li>
+<li>雨一直在屋外。回家段用屋簷、傘與暖燈表達安穩，濕衣、地面與犬毛可保留先前雨水。</li>
+</ul>
+<h2>四、60 秒時間軸與字幕</h2>
+<p>每段正好 5 秒，結束時間即下一段起點。轉場包含於段內，不另增加片長。</p>
+<table>
+<thead>
+<tr>
+<th>段落</th>
+<th>時間</th>
+<th>景別</th>
+<th>小標題 / English</th>
+<th>中文字幕</th>
+<th>English caption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>片頭</td>
+<td>00:00–00:05</td>
+<td>海報微動</td>
+<td>慢慢，陪你回家</td>
+<td>海報原有四段文字</td>
+<td>Original poster text</td>
+</tr>
+<tr>
+<td>01</td>
+<td>00:05–00:10</td>
+<td>遠景</td>
+<td>雨前小巷 / Before the Rain</td>
+<td>雨要來了我們回家</td>
+<td>Rain is coming. Let's go home.</td>
+</tr>
+<tr>
+<td>02</td>
+<td>00:10–00:15</td>
+<td>低角度近景</td>
+<td>腳步漸緩 / Slower Steps</td>
+<td>你的腳步慢了一點</td>
+<td>Your steps have grown slower.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>00:15–00:20</td>
+<td>中景</td>
+<td>回身等你 / Turning Back</td>
+<td>我先停下來等你</td>
+<td>I'll stop and wait for you.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>00:20–00:25</td>
+<td>中近景</td>
+<td>蹲下聽你 / Down at Your Level</td>
+<td>蹲低才懂你的世界</td>
+<td>I kneel to see your world.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>00:25–00:30</td>
+<td>俯視特寫</td>
+<td>水中相伴 / Together in Reflection</td>
+<td>水裡還有我們兩個</td>
+<td>There we are, together.</td>
+</tr>
+<tr>
+<td>06</td>
+<td>00:30–00:35</td>
+<td>臉部近景</td>
+<td>笑意放晴 / A Softer Smile</td>
+<td>原來你也捨不得</td>
+<td>You want to linger, too.</td>
+</tr>
+<tr>
+<td>07</td>
+<td>00:35–00:40</td>
+<td>中景</td>
+<td>把傘分你 / Sharing the Shelter</td>
+<td>把傘多分給你一點</td>
+<td>More shelter, just for you.</td>
+</tr>
+<tr>
+<td>08</td>
+<td>00:40–00:45</td>
+<td>背面遠景</td>
+<td>並肩慢行 / Side by Side</td>
+<td>回家的路不必著急</td>
+<td>There's no need to hurry home.</td>
+</tr>
+<tr>
+<td>09</td>
+<td>00:45–00:50</td>
+<td>中遠景</td>
+<td>暖燈在前 / A Light Ahead</td>
+<td>那盞燈一直等我們</td>
+<td>That light is waiting for us.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>00:50–00:55</td>
+<td>中近景</td>
+<td>到家有你 / Home with You</td>
+<td>有你在身旁就是家</td>
+<td>Home is having you beside me.</td>
+</tr>
+<tr>
+<td>片尾</td>
+<td>00:55–01:00</td>
+<td>海報微動</td>
+<td>慢慢，陪你回家</td>
+<td>海報原有四段文字</td>
+<td>Original poster text</td>
+</tr>
+</tbody>
+</table>
+<p>中文小標題均為 4 字，中文字幕依序 8、8、7、8、8、7、8、8、8、8 字；均符合 6–10 字要求。字幕省略中文標點，維持一眼可讀；英文採自然短句，以情緒對應為主，不逐字硬譯。中英文 SRT 各 10 段，時間為整片第 5–55 秒。片頭片尾不再重複疊加字幕。</p>
+<h2>五、十鏡中英文畫面內容與提示詞</h2>
+<p>每鏡各有中英文圖像、影片提示詞。對照版本可擇一使用；圖像提示詞用於獨立單張，影片提示詞用於該圖的 5 秒動態。字幕後製加入。</p>
+<h3>01｜雨前小巷 / Before the Rain</h3>
+<p><strong>遠景 / Wide shot｜00:05–00:10｜5 秒</strong></p>
+<p>灰藍暮色中，小禾撐著已打開的灰綠傘走在前方，阿栗在她身旁稍後；巷底門廊透出一點暖光。</p>
+<p>In the gray-blue dusk, Xiaohe walks ahead with the sage-gray umbrella already open. A-Li trails slightly beside her. A porch glows faintly at the end of the lane.</p>
+<p><strong>Video Caption</strong>：雨要來了我們回家 / Rain is coming. Let's go home.</p>
+<p><a href="../assets/shot_01.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+全身遠景，小禾偏左、阿栗在右側稍後，兩者同景深；短巷向右上方轉入暖燈門廊，灰泥牆、木圍籬與濕石板。傘目前主要遮住少女，稀疏雨點剛落下。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Full-body wide shot. Xiaohe is left of center; A-Li trails on her right at equal depth. A short lane curves toward a warmly lit porch in the upper right, with gray plaster walls, timber fences and wet stone paving. The umbrella mostly shelters the girl; the first sparse drops fall.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+緩慢向前跟拍，小禾走兩個稍快的小步，阿栗只走一個緩步，兩者距離稍增；傘保持右手持握，不換手。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Slow forward tracking. Xiaohe takes two slightly hurried small steps while A-Li takes one slow step, increasing their separation a little. The umbrella stays in her right hand.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>02｜腳步漸緩 / Slower Steps</h3>
+<p><strong>低角度近景 / Low-angle close shot｜00:10–00:15｜5 秒</strong></p>
+<p>阿栗在水窪邊停下。前方少女的雨靴已踏出半步，兩種步伐第一次在畫面中分開。</p>
+<p>A-Li stops at a puddle. Ahead, the girl's rain boots have already moved half a step farther, making their different rhythms visible.</p>
+<p><strong>Video Caption</strong>：你的腳步慢了一點 / Your steps have grown slower.</p>
+<p><a href="../assets/shot_02.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+低機位，阿栗完整四肢與白口鼻清楚，面朝右側水窪；小禾只露左後方灰粉衣襬及炭灰靴，避免把腿變成額外人物。傘在畫外，光線仍柔和。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Low camera, A-Li's four legs and white muzzle readable as he faces a puddle on the right. Only Xiaohe's dusty-rose hem and charcoal boots appear ahead on the left; these belong to the same girl. Umbrella outside the crop.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+固定低機位。阿栗最後一隻前腳輕輕落地後停住，鼻尖稍低；少女前方一隻靴子停下，不再前進。水面僅小漣漪。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Locked low camera. A-Li gently sets down his last raised forepaw and stops, lowering his nose slightly. One of the girl's boots ahead comes to rest. Only small ripples move.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>03｜回身等你 / Turning Back</h3>
+<p><strong>中景 / Medium shot｜00:15–00:20｜5 秒</strong></p>
+<p>小禾回過頭，看見阿栗仍望著水窪。她原本微皺的眉頭鬆開，身體不再朝前催促。</p>
+<p>Xiaohe looks back and sees A-Li still watching the puddle. Her slightly furrowed brow relaxes, and she stops leaning forward.</p>
+<p><strong>Video Caption</strong>：我先停下來等你 / I'll stop and wait for you.</p>
+<p><a href="../assets/shot_03.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+少女站左、老犬站右，三分之二身中景，少女右手持傘於自身上方，回頭向下看阿栗。灰藍短巷維持同一方向與弱暖光。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Girl standing on the left, senior dog on the right, medium shot showing most of her body. She holds the umbrella over herself in her right hand and looks back down at A-Li. Same gray-blue lane and distant weak warm light.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+鏡頭固定。小禾緩慢轉頭看向阿栗，肩膀放鬆；阿栗保持四腳站穩，只向水面看。無拉扯或突然移動。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Locked camera. Xiaohe slowly turns her head toward A-Li and relaxes her shoulders. A-Li stands steadily on all four paws, watching the water. No tugging or abrupt movement.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>04｜蹲下聽你 / Down at Your Level</h3>
+<p><strong>中近景 / Medium close-up｜00:20–00:25｜5 秒</strong></p>
+<p>小禾蹲到阿栗旁邊，視線降到牠的高度，跟著牠看向地面。傘也隨她降低。</p>
+<p>Xiaohe crouches beside A-Li, bringing her eyes down to his level and following his gaze toward the ground. The umbrella lowers with her.</p>
+<p><strong>Video Caption</strong>：蹲低才懂你的世界 / I kneel to see your world.</p>
+<p><a href="../assets/shot_04.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+眼平低機位，小禾蹲左側，阿栗站右側，少女臉部仍略高於老犬頭頂，犬頭小而自然，不因蹲姿放大犬身。灰綠傘仍由右手握持，傘沿在上方，不穿過臉。前景留少量水窪。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Low eye-level camera. Xiaohe crouches on the left, A-Li stands on the right, the girl's face still above the dog's small head; do not enlarge the dog to match her face. The open sage-gray umbrella remains in her right hand, its rim overhead without crossing faces. A little puddle in the foreground.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+由已半蹲的首幀開始，小禾緩慢下降幾公分到舒適蹲姿，傘桿隨手同步移動，停下後順著阿栗目光低頭。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+From an already half-crouched first frame, Xiaohe lowers a few centimeters into a comfortable crouch. The umbrella shaft follows her hand coherently. She settles and looks down along A-Li's gaze.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>05｜水中相伴 / Together in Reflection</h3>
+<p>2026-10-23 再修正：重構為一人一犬的臉部倒影近景，頸肩朝上、頭頂朝下，腿腳自然留在畫外；取消身體被水平水線截斷的舊構圖，消除與石板重疊的效果。中英文描述、圖像與影片提示詞及匯出版本同步更新。</p>
+<p><strong>俯視特寫 / Top-down detail｜00:25–00:30｜5 秒</strong></p>
+<p>水窪近景只映出少女與老犬靠近的臉，頸肩朝畫面上緣、頭頂朝下；腿腳全部在畫外。細雨輕觸水面，她在同一片倒影裡看見彼此的陪伴。</p>
+<p>A tight puddle close-up reflects their faces together, with necks toward the top edge and crowns pointing down; all legs and feet remain outside the crop. Light rain touches the water as she recognizes their quiet companionship.</p>
+<p><strong>Video Caption</strong>：水裡還有我們兩個 / There we are, together.</p>
+<p><a href="../assets/shot_05.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+近乎垂直俯拍單一淺水窪，畫面只呈現小禾與老柴犬阿栗的臉部及少量頸肩的一組水面倒影。倒影方向清楚：頸肩朝畫面上緣並自然延伸至畫外，頭頂朝畫面下方；少女在左，犬在右，兩張臉靠近。全圖沒有膝蓋、腿、雨靴、犬爪或完整身體，既不出現實體腳部，也不畫反射的腳部。灰綠雨傘僅在右上方映出一小部分。灰藍天空映光、細微水紋與雨滴漣漪連續穿過臉部映像；右下角只留少量不規則水窪邊緣，沒有石板格線穿過身體，也沒有水平水線截斷人物。只有一張少女臉及一張犬臉，沒有第二組倒影、人物站在水中或身體陷入地面的效果。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Nearly vertical downward close-up of ONE shallow puddle. Show ONLY ONE reflected face of Xiaohe on the left and ONE reflected face of elderly Shiba A-Li on the right, close together, with a little neck and shoulder. The reflections are clearly upside-down: necks extend naturally OUT THROUGH THE TOP EDGE and crowns point toward the BOTTOM. No knees, legs, boots, dog paws or complete bodies, either physical or reflected. Only a small reflected sage umbrella fragment at upper right. Reflected gray-blue sky, fine surface distortions and raindrop rings pass continuously across the facial reflections. A small irregular puddle edge occupies the bottom-right corner; no paving grid crossing bodies and no horizontal waterline truncating figures. Exactly one girl face and one dog face; no secondary reflection, figures standing in water or bodies sunk into pavement.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+固定俯拍臉部倒影近景，正好 5 秒。兩張倒影維持頸肩朝上緣、頭頂朝下的方向與相對位置，不翻轉成正立人物；所有膝蓋、腿、雨靴及犬爪全程在畫外。只讓一滴雨形成細小漣漪並輕輕掠過水面，五官依然可辨，不以人物下沉、截斷或融化表現水紋。不推拉鏡頭、不擴大取景、不新增身體、腳部或第二組倒影。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Locked downward close-up of the reflected faces, exactly 5 seconds. Preserve their upside-down orientation, with necks toward the top edge and crowns toward the bottom, and stable relative positions. Keep all knees, legs, boots and paws outside the crop throughout. One raindrop produces delicate rings across the surface while facial identity remains readable. No sinking, truncating or melting bodies; no rotation into upright solid figures, zoom, wider framing, added limbs or second reflection.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>06｜笑意放晴 / A Softer Smile</h3>
+<p><strong>臉部近景 / Face close-up｜00:30–00:35｜5 秒</strong></p>
+<p>看著水面的小禾露出很輕的笑。阿栗的白色耳邊輪廓在畫面下方，兩者之間的距離已經縮短。</p>
+<p>A small smile appears as Xiaohe watches the water. The pale edge of A-Li's head rests near the lower edge of the frame; the distance between them has softened.</p>
+<p><strong>Video Caption</strong>：原來你也捨不得 / You want to linger, too.</p>
+<p><a href="../assets/shot_06.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+少女臉部與肩膀近景，深棕短髮、棕眼和灰粉兜帽清楚，微笑克制，不哭。下角只露阿栗一小段白眉耳側，傘灰綠內面在上方柔化，傘桿避開臉。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Close-up of Xiaohe's face and shoulders, with dark-brown bob, brown eyes and dusty-rose hood clear. A restrained smile, no tears. Only a small part of A-Li's pale brow and ear edge enters below. Soft sage umbrella underside above; shaft clear of face.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+極慢微推近。小禾嘴角微微上揚、眨眼一次，目光仍朝向阿栗與水面；不變臉、不落淚，背景保持柔焦。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Very slow gentle push-in. Xiaohe makes a tiny smile and blinks once, still looking toward A-Li and the water. No face changes or tears; background stays softly focused.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>07｜把傘分你 / Sharing the Shelter</h3>
+<p><strong>中景 / Medium shot｜00:35–00:40｜5 秒</strong></p>
+<p>小禾把傘往阿栗那側移去。傘沿收住落在牠背上的雨，她自己的肩膀反而更靠近傘邊。</p>
+<p>Xiaohe shifts the umbrella toward A-Li. Its rim catches the rain above his back, while her own shoulder moves nearer the edge.</p>
+<p><strong>Video Caption</strong>：把傘多分給你一點 / More shelter, just for you.</p>
+<p><a href="../assets/shot_07.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+小禾蹲左側，阿栗在右側，兩者全頭及犬身可見。右手握同一傘桿，開傘明確向右覆在阿栗上方，少女左肩接近傘沿；左手自然停在膝上。只有一把傘、兩隻人手。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Xiaohe crouches on the left, A-Li on the right; both heads and the dog's body visible. Her RIGHT hand holds the same shaft, shifting the OPEN canopy to the right over A-Li. Her outer shoulder nears the rim; left hand rests on her knee. Exactly one umbrella and two human hands.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+鏡頭固定。小禾右手將傘向阿栗平移一小段並輕微傾斜，傘柄與手、傘桿與傘面始終連接。阿栗抬眼看她一次，仍站穩。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Locked camera. With her right hand, Xiaohe moves the umbrella slightly toward A-Li and tilts it gently. Handle, hand, shaft and canopy remain connected. A-Li glances up once, standing steadily.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>08｜並肩慢行 / Side by Side</h3>
+<p><strong>背面遠景 / Rear wide shot｜00:40–00:45｜5 秒</strong></p>
+<p>小禾與阿栗並肩走向暖光，不再一前一後。一把傘之下，兩種步伐終於找到共同的速度。</p>
+<p>Xiaohe and A-Li walk toward the warm light side by side. Under one umbrella, their different steps find a shared pace.</p>
+<p><strong>Video Caption</strong>：回家的路不必著急 / There's no need to hurry home.</p>
+<p><a href="../assets/shot_08.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+背面全身遠景，小禾偏左、老柴犬偏右並肩同景深，傘由少女右手持握並偏向犬側。木圍籬與灰泥牆引導至右上門廊，地上小雨反光，留大片安靜灰藍空間。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Rear full-body wide shot. Xiaohe on the left, A-Li on the right at the same depth, walking side by side. Umbrella in her right hand favors the dog's side. Timber fence and plaster wall lead to the upper-right porch, wet paving reflecting light; generous quiet gray-blue space.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+緩慢跟拍。兩者並肩各走兩個小步，小禾縮短步幅等待老犬；傘穩定偏向犬側，狗不奔跑，不突然變年輕。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Slow tracking. Both take two small side-by-side steps. Xiaohe shortens her stride to match the old dog. Umbrella stays toward his side; no running or rejuvenation.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>09｜暖燈在前 / A Light Ahead</h3>
+<p><strong>中遠景 / Medium wide shot｜00:45–00:50｜5 秒</strong></p>
+<p>他們抵達同一條巷子盡頭的木門廊。暖光落在白口鼻與灰粉衣襬，雨仍在門外輕下。</p>
+<p>They reach the timber porch at the end of the same lane. Warm light touches A-Li's pale muzzle and Xiaohe's dusty-rose hem. Rain continues softly outside.</p>
+<p><strong>Video Caption</strong>：那盞燈一直等我們 / That light is waiting for us.</p>
+<p><a href="../assets/shot_09.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+同一屋宅門廊中遠景：奶灰牆、深木色門、門右一盞暖琥珀壁燈、低木平台與深色屋簷。小禾在左、犬在右靠近門，少女右手持同一開傘。兩者尚在門外，不畫另一戶或新增人物。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Medium wide shot of the same porch: warm-gray wall, dark timber door, ONE amber wall lamp to the door's right, low timber platform and dark eave. Xiaohe left, A-Li right near the door; same open umbrella in her right hand. Both still outside. No other household or people.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+鏡頭緩慢前推。兩者踏上低平台後停下，暖燈亮度保持穩定；傘保持張開，雨只在門廊外落下。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Slow push-in. They step onto the low platform and stop. The warm lamp remains steady. Umbrella stays open; rain falls only beyond the porch.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h3>10｜到家有你 / Home with You</h3>
+<p><strong>中近景 / Medium close-up｜00:50–00:55｜5 秒</strong></p>
+<p>門廊下，小禾蹲下以左手輕觸阿栗臉側。老犬把臉靠進她手心，暖光將一人一犬包在同一片安穩裡。</p>
+<p>Under the porch, Xiaohe crouches and gently cups A-Li's cheek with her left hand. The old dog leans into her palm, sharing the same pool of warm light.</p>
+<p><strong>Video Caption</strong>：有你在身旁就是家 / Home is having you beside me.</p>
+<p><a href="../assets/shot_10.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張。直式 9:16，單一完整畫面。
+暖燈門廊下的親密雙人中近景，小禾蹲左側，阿栗站右側，左掌輕托白色臉頰，右手仍握唯一灰綠開傘，傘移到畫面上方偏外側，可只見傘沿與相連傘桿。門後關閉，雨在屋簷外。兩者自然安心微笑。
+附上並嚴格沿用 character_he.png、character_ali.png、character_scale.png。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+同一灰藍雨天住宅短巷、同一傍晚，灰泥牆、木圍籬、濕石板；巷尾同一深木門廊，門右一盞琥珀燈。角色同景深時，犬肩低於少女膝蓋，約為少女全高的 23%；蹲姿不可把犬放大到與少女臉等大。僅畫本鏡指定角色部分，無其他人或動物。無文字、字幕、角落署名、標誌或浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation still, vertical 9:16, one full frame, no collage.
+Intimate medium close-up under the warm porch. Xiaohe crouches left, A-Li stands right, her LEFT palm lightly cupping his white cheek. Her RIGHT hand still holds the ONE sage OPEN umbrella, shifted high and outward; a connected shaft and rim may be cropped above. Closed door behind; rain outside the eave. Natural peaceful expressions.
+Attach and strictly follow character_he.png, character_ali.png and character_scale.png. Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Same gray-blue rainy lane and dusk, plaster walls, timber fence and wet stone paving; same dark timber porch with one amber lamp to the door's right. At equal depth, dog's shoulder stays BELOW the standing girl's knee, about23% of her full height; do not enlarge the dog to match her face at a crouch. Show only character parts specified. No extra people or animals. NO text, captions, corner signatures, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以對應分鏡圖為首幀，單一連續鏡頭、無剪接。
+固定鏡頭。阿栗緩慢把白色口鼻靠進少女左掌，小禾輕輕撫摸一次，右手與傘保持穩定；最後兩秒停穩，不抱起或縮小犬身。
+沿用角色設定圖的臉型、雨衣、柴犬老年斑紋與相對比例，保持 S13 柔光薄塗。雨傘僅一把，由右手持握、帽子放下；畫外道具不須硬加入。手、傘桿及傘面連接正常，不換手、不新增肢體。無新角色、字幕、標誌或浮水印。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds; use the corresponding still as first frame. One continuous shot, no cuts.
+Locked camera. A-Li slowly leans his white muzzle into her left palm. Xiaohe gives one gentle stroke, keeping her right hand and umbrella steady. Hold the last two seconds; do not lift or shrink the dog.
+Preserve sheet identity, coat, senior Shiba markings and relative scale; retain S13 soft thin painting. ONE umbrella held in the RIGHT hand, hood down; do not force cropped props into view. Keep hands, shaft and canopy physically connected. No hand switching, extra limbs, new characters, captions, logos or watermarks.
+</code></pre>
+<h2>六、片頭與片尾海報及各 5 秒影片提示詞</h2>
+<p>2026-10-23 改版：片頭、片尾採獨立視點與前導／後記場景，不能僅用正片第 01／10 鏡加字。兩張海報仍使用相同四段中英文標題及副標題，各 5 秒，全片維持 60 秒。</p>
+<h3>片頭｜00:00–00:05｜雨巷轉角的俯視傘面</h3>
+<p>2026-10-23 遮雨修正：傘面重新置中並加寬，少女頭肩與老犬共同受到遮蔽；片頭圖像與 5 秒影片的中英文提示詞已同步更新。</p>
+<p>高處斜俯視住宅雨巷轉角，以濕石板的斜向線條和中下方一個灰綠圓形傘面為主體。小禾從左下方的轉角帶著阿栗走入巷內，兩者從背面或側後方看見，雨傘右手持握；阿栗緊靠她右側略前方。少女、傘和犬合成小幅環境人物，不使用正面全身站姿或低機位。上方大面積柔和灰藍石板留作標題區，沒有水窪倒影特寫。</p>
+<p><strong>狀態連續性</strong>：前導畫面；灰綠傘已開，由右手持握，帽子放下。不是正片 01 的正面構圖，也不是正片 05 的倒影。 少女與老犬全程緊靠同一傘下，兩者都受到遮蔽。</p>
+<p><a href="../assets/poster_opening.webp">查看新版片頭海報</a></p>
+<p><strong>海報圖像提示詞｜中文</strong></p>
+<pre><code class="language-text">用途：原創動畫片頭海報，直式 9:16，獨立新構圖。高處斜俯視住宅雨巷轉角，以濕石板的斜向線條和中下方一個灰綠圓形傘面為主體。小禾從左下方的轉角帶著阿栗走入巷內，兩者從背面或側後方看見，雨傘右手持握；阿栗緊靠她右側略前方。少女、傘和犬合成小幅環境人物，不使用正面全身站姿或低機位。上方大面積柔和灰藍石板留作標題區，沒有水窪倒影特寫。
+前導畫面；灰綠傘已開，由右手持握，帽子放下。不是正片 01 的正面構圖，也不是正片 05 的倒影。 少女與老犬全程緊靠同一傘下，兩者都受到遮蔽。
+遮雨構圖：灰綠傘面中心位於小禾與阿栗之間，足夠寬大，確實同時遮住少女的頭部、雙肩及右側老犬。傘不可只偏向狗。俯視下傘緣自然遮擋少女頭頂，僅露出下方部分短髮與雨衣；阿栗緊靠她的右腳略前方，位於同一傘面下。維持單一連貫傘桿、正常右手持握與合理透視。
+小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+角色設定圖僅作身份與比例參考；分鏡圖僅作環境、服裝、光色參考，禁止複製分鏡 01／10 的構圖、姿勢再加字。
+只加入四段文字：『慢慢，陪你回家』『Home at Your Pace』『路可以慢，陪伴不缺席。』『Take your time. I'll stay by your side.』，繁體中文字形正確，標點完整，清晰排版，避開角色。沒有其他文字、署名、商標或浮水印。
+</code></pre>
+<p><strong>Poster image prompt｜English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE vertical9:16 original opening poster with a genuinely NEW camera position, staging and story moment. A DISTINCT HIGH OBLIQUE OVERHEAD view of a RAINY LANE CORNER. Diagonal wet stone paving and the large circular SAGE-GRAY UMBRELLA shape in the LOWER HALF lead the composition. Xiaohe rounds a corner from lower-left into the lane, seen FROM THE BACK/REAR THREE-QUARTER under the umbrella, her crown naturally hidden by the near canopy rim, with lower hair and dusty-rose coat visible beneath it. The ONE small senior Shiba walks close beside and slightly ahead on her RIGHT, clearly a normal small dog, not enlarged to girl's waist. Umbrella is held in her RIGHT hand, connected shaft. Subjects are modest environmental figures, not a big frontal full-body portrait. Top third is quiet gray-blue wet paving for type. NO puddle-reflection close-up. This is not the existing eye-level lane shot.
+Prologue: umbrella already open in the RIGHT hand, hood down. Not shot01's frontal composition or shot05's reflection.
+Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Input character sheets are ONLY for identity/proportions; environment still ONLY for architecture/style/color. Do NOT reproduce an existing shot01/shot10 composition with typography added. Render a fresh single scene, no collage or repeated characters. Render EXACTLY FOUR text blocks: &quot;慢慢，陪你回家&quot; / &quot;Home at Your Pace&quot; / &quot;路可以慢，陪伴不缺席。&quot; / &quot;Take your time. I'll stay by your side.&quot;. Correct Traditional Chinese and punctuation, elegant readable ivory editorial typography. Keep text separate from faces and silhouettes. NO other lettering, tiny signature, logos or watermark.
+Shelter geometry: center the broad sage canopy over BOTH Xiaohe and A-Li, fully sheltering the girl's head and shoulders as well as the small dog close beside and slightly ahead of her RIGHT leg. Never offset the umbrella toward the dog alone. From this high rear view, the near canopy rim naturally occludes the girl's crown; only the lower part of her bob and her coat remain visible beneath it. Maintain one connected shaft, a natural right-hand grip and coherent perspective.
+</code></pre>
+<p><strong>影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以新版 poster_opening.png 為首幀，單一連續鏡頭、無剪接。
+第 0–1 秒讓俯視構圖供閱讀；第 1–4 秒少女沿轉角邁一個小步，老犬在她右側同步緩緩邁一個小步，灰綠傘面只有微小自然晃動，稀疏雨點在石板上輕落；第 4–5 秒停穩。鏡頭固定於高位，角色不轉向鏡頭。
+前導畫面；灰綠傘已開，由右手持握，帽子放下。不是正片 01 的正面構圖，也不是正片 05 的倒影。 少女與老犬全程緊靠同一傘下，兩者都受到遮蔽。
+整個 5 秒兩者保持靠近，同一傘面全程同時遮住少女頭肩與老犬；傘只隨步伐平穩移動，不偏移露出少女，也不改變大小或穿過人物。
+保持定稿角色、服裝、動物斑紋與比例，維持本片風格。四段原有文字『慢慢，陪你回家』『Home at Your Pace』『路可以慢，陪伴不缺席。』『Take your time. I'll stay by your side.』全程固定原位、清晰不變，不變形、閃爍或新增字樣；文字層鎖定，只讓場景輕微活動。
+</code></pre>
+<p><strong>Video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical9:16, exactly5 seconds, use the REVISED poster_opening.png as first frame. One continuous shot, no cuts.
+Hold the overhead composition for reading during seconds0–1. During seconds1–4, Xiaohe takes ONE small step around the corner and A-Li takes ONE matching slow step close beside her RIGHT leg. The sage canopy makes only a slight natural movement; sparse drops touch the paving. Settle during seconds4–5. Locked high camera; characters do not turn to face the camera.
+Prologue: umbrella already open in the RIGHT hand, hood down. Not shot01's frontal composition or shot05's reflection.
+Preserve reference identity, clothing, animal markings and scale, and film style. Lock these original four text blocks exactly in place throughout: &quot;慢慢，陪你回家&quot;, &quot;Home at Your Pace&quot;, &quot;路可以慢，陪伴不缺席。&quot;, &quot;Take your time. I'll stay by your side.&quot;. No distortion, flicker or new lettering; animate only the scene, typography static.
+Throughout all 5 seconds, keep both close together and sheltered under the SAME canopy. Move the umbrella steadily with their small steps; never uncover the girl's head or shoulders, resize the canopy or intersect either character.
+</code></pre>
+<h3>片尾｜00:55–01:00｜屋內門檻的到家餘韻</h3>
+<p>從溫暖屋內向門外灰藍細雨望去。小禾坐在門檻內側木地板邊緣，側面／側後方，兩隻手自然放在膝上；阿栗安穩趴在她的雨靴旁，頭輕靠靴邊，眼神柔和、仍有精神。她低頭帶著淺笑。唯一灰綠雨傘已收起，斜靠畫面右側門框內，不由手持握。外頭雨巷柔化，屋內暖光占主導，上方室內素牆及深木門框供排字。這是第 10 鏡之後的省略時間，不重複門外蹲下撫犬臉頰的畫面。</p>
+<p><strong>狀態連續性</strong>：故事後記；兩者已進入門檻內，雨傘已收起並靠在門框。這個收傘狀態只用於片尾，不改正片 01–10 的持傘設定。明亮、溫暖、有歸屬感。</p>
+<p><a href="../assets/poster_ending.webp">查看新版片尾海報</a></p>
+<p><strong>海報圖像提示詞｜中文</strong></p>
+<pre><code class="language-text">用途：原創動畫片尾海報，直式 9:16，獨立新構圖。從溫暖屋內向門外灰藍細雨望去。小禾坐在門檻內側木地板邊緣，側面／側後方，兩隻手自然放在膝上；阿栗安穩趴在她的雨靴旁，頭輕靠靴邊，眼神柔和、仍有精神。她低頭帶著淺笑。唯一灰綠雨傘已收起，斜靠畫面右側門框內，不由手持握。外頭雨巷柔化，屋內暖光占主導，上方室內素牆及深木門框供排字。這是第 10 鏡之後的省略時間，不重複門外蹲下撫犬臉頰的畫面。
+故事後記；兩者已進入門檻內，雨傘已收起並靠在門框。這個收傘狀態只用於片尾，不改正片 01–10 的持傘設定。明亮、溫暖、有歸屬感。
+小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。阿栗 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。
+S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+角色設定圖僅作身份與比例參考；分鏡圖僅作環境、服裝、光色參考，禁止複製分鏡 01／10 的構圖、姿勢再加字。
+只加入四段文字：『慢慢，陪你回家』『Home at Your Pace』『路可以慢，陪伴不缺席。』『Take your time. I'll stay by your side.』，繁體中文字形正確，標點完整，清晰排版，避開角色。沒有其他文字、署名、商標或浮水印。
+</code></pre>
+<p><strong>Poster image prompt｜English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE vertical9:16 original ending poster with a genuinely NEW camera position, staging and story moment. NEW AFTER-HOMECOMING EPILOGUE, viewed from INSIDE the warm house looking OUT through an open doorway at soft gray-blue rain. LOWER HALF: Xiaohe SITS on the inner timber threshold/floor edge in SIDE/REAR THREE-QUARTER view, dusty-rose coat and charcoal boots unchanged, BOTH hands relaxed on her lap, looking down with a small contented smile. A-Li lies peacefully beside her boots, pale chin resting gently against a boot, softly OPEN lively eyes, normal small senior Shiba scale, not lifeless. The ONE sage-gray umbrella is now FOLDED/CLOSED and leans against the INSIDE RIGHT DOOR JAMB, black J handle visible; NO umbrella in her hands. Warm interior amber light dominates, rain is outside. Clean interior wall/wood above for four text blocks. This is an elliptical moment AFTER shot10, NOT an outdoor crouching face-petting pose. No cheek-cupping hand, no open canopy overhead, no tragic symbolism.
+Epilogue after entering the threshold; the umbrella is now CLOSED against the jamb. This closed state is only for the ending and does not change shots01–10. Bright, warm and reassuring.
+Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand. A-Li: a 14-year-old Shiba Inu, about 37 cm at the shoulder and 53 cm to the standing crown; muted honey-tan back and crown, broad creamy-white aged muzzle and chest/belly, gray-white brows and eye surrounds, brown eyes, black nose, triangular ears and a curled tail. One plain dark-sage collar, no tag or clothing. Follow the shared scale sheet at equal depth; never turn the dog into a puppy, Akita, corgi or large dog.
+S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+Input character sheets are ONLY for identity/proportions; environment still ONLY for architecture/style/color. Do NOT reproduce an existing shot01/shot10 composition with typography added. Render a fresh single scene, no collage or repeated characters. Render EXACTLY FOUR text blocks: &quot;慢慢，陪你回家&quot; / &quot;Home at Your Pace&quot; / &quot;路可以慢，陪伴不缺席。&quot; / &quot;Take your time. I'll stay by your side.&quot;. Correct Traditional Chinese and punctuation, elegant readable ivory editorial typography. Keep text separate from faces and silhouettes. NO other lettering, tiny signature, logos or watermark.
+</code></pre>
+<p><strong>影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以新版 poster_ending.png 為首幀，單一連續鏡頭、無剪接。
+第 0–1 秒保留屋內安穩構圖；第 1–3 秒小禾微微低頭看阿栗，阿栗只抬眼看她一次，保持頭靠靴邊的放鬆姿態；第 3–5 秒安靜停留，門外雨絲輕落。收起的雨傘始終倚在門框，不自動張開；雙手留在膝上，不再次撫臉或抱犬。
+故事後記；兩者已進入門檻內，雨傘已收起並靠在門框。這個收傘狀態只用於片尾，不改正片 01–10 的持傘設定。明亮、溫暖、有歸屬感。
+保持定稿角色、服裝、動物斑紋與比例，維持本片風格。四段原有文字『慢慢，陪你回家』『Home at Your Pace』『路可以慢，陪伴不缺席。』『Take your time. I'll stay by your side.』全程固定原位、清晰不變，不變形、閃爍或新增字樣；文字層鎖定，只讓場景輕微活動。
+</code></pre>
+<p><strong>Video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical9:16, exactly5 seconds, use the REVISED poster_ending.png as first frame. One continuous shot, no cuts.
+Hold the safe interior composition during seconds0–1. During seconds1–3, Xiaohe lowers her gaze slightly toward A-Li, who glances up once while keeping his chin relaxed by her boot. Hold quietly during seconds3–5 as rain falls outside. The CLOSED umbrella stays leaning on the jamb and never opens. Both hands stay on her lap; no renewed cheek-cupping or lifting the dog.
+Epilogue after entering the threshold; the umbrella is now CLOSED against the jamb. This closed state is only for the ending and does not change shots01–10. Bright, warm and reassuring.
+Preserve reference identity, clothing, animal markings and scale, and film style. Lock these original four text blocks exactly in place throughout: &quot;慢慢，陪你回家&quot;, &quot;Home at Your Pace&quot;, &quot;路可以慢，陪伴不缺席。&quot;, &quot;Take your time. I'll stay by your side.&quot;. No distortion, flicker or new lettering; animate only the scene, typography static.
+</code></pre>
+<p>海報四段文字須全程固定。若影片工具無法鎖定排字，可後製覆蓋原海報文字區，僅動畫化場景。舊海報與舊提示詞另存海報/舊版_20261023；正式生成請使用目前海報目錄及本節新版提示詞。</p>
+<h2>七、角色設定圖再製提示詞</h2>
+<p>定稿圖片已生成；以下提示詞用於未來重製，仍須搭配已交付的設定圖。小禾的英文名字統一使用 Xiaohe，檔名 character_he.png 保留不變。</p>
+<h3>小禾四視角</h3>
+<p><strong>中文</strong></p>
+<pre><code class="language-text">生成獨立角色設定表，16:9 白色背景、均勻光線，四個等比例全身視角依序正面、45度側面、嚴格側面、背面。小禾 Xiaohe：16 歲少女，約 158 公分，纖細自然、約七頭身；深棕齊下巴短髮、齊眉輕薄瀏海、棕眼。固定穿灰粉色及膝連帽雨衣（帽子放下、五顆深灰圓扣、兩個貼袋）、灰藍貼身長褲、炭灰短雨靴，無包與飾品。雨傘固定為一把灰綠色八骨圓頂傘，細深灰傘桿、黑色 J 形把手，正常狀態由右手持傘。四個身體視角不持傘，右下角以小尺寸單獨展示同一灰綠八骨開傘及黑色J形把手；不遮角色。S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。 無文字、署名、標籤、浮水印。
+</code></pre>
+<p><strong>English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. Create ONE landscape 16:9 CHARACTER SHEET for an original tender animated short. White pure background, even neutral illumination, no ground scenery, no text, no labels, no watermark. FOUR equally scaled, clearly separated FULL BODY views arranged horizontally, from left to right: FRONT, 45-degree three-quarter, STRICT 90-degree SIDE PROFILE, BACK. Entire head and boots visible, same neutral relaxed standing pose and identical clothing across views. Subject: Xiaohe: a slim, naturally proportioned 16-year-old girl, about 158 cm tall and seven heads high; chin-length dark-brown bob with light eyebrow-length bangs and brown eyes. Dusty-rose knee-length hooded raincoat with hood DOWN, five dark-gray round buttons and two patch pockets; fitted gray-blue trousers and charcoal ankle rain boots; no bag or jewelry. One sage-gray eight-rib dome umbrella with a thin dark-gray shaft and black J-shaped handle, normally held in her RIGHT hand.  She is NOT holding an umbrella in the four body views so clothing and proportions are unobstructed. At the far lower-right, small separate accessory drawing of the SAME sage-gray OPEN umbrella, eight ribs, dark-gray shaft and black J handle, no person under it. Use the supplied image ONLY as a style reference for gentle linework, muted palette and thin paint; do NOT copy its characters, bed, medical props or composition. S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+</code></pre>
+<h3>阿栗四視角</h3>
+<p><strong>中文</strong></p>
+<pre><code class="language-text">生成老柴犬獨立角色設定表，16:9 白背景、均勻光線，四個等比例全身視角：正面、45度側面、嚴格側面、背面；每個視角四肢、三角耳及捲尾完整。 A-Li：14 歲老柴犬，肩高約 37 公分、站立頭頂約 53 公分；柔和蜂蜜棕背及頭頂、大片奶白口鼻與胸腹、灰白眉及眼周、棕眼、黑鼻、三角耳、捲尾，深灰綠素色項圈，無衣物、無吊牌。保持小禾與柴犬在同景深的比例，依共同體型設定圖；不把狗畫成幼犬、秋田犬、柯基或大型犬。 S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。 無文字、署名、標籤、浮水印。
+</code></pre>
+<p><strong>English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. Create ONE landscape 16:9 CHARACTER SHEET of ONE elderly Shiba Inu, represented in FOUR equally scaled, separated FULL BODY views, left to right FRONT, 45-degree three-quarter, STRICT 90-degree SIDE PROFILE facing right, BACK. Each view has FOUR normal canine legs, triangular ears, broad pale aged muzzle, curled tail, anatomically believable compact Shiba build. Dog 14 years old, 37 cm shoulder height, crown53cm; muted honey-tan coat, creamy-white aged muzzle and chest/belly, gray-white brows and around eyes, brown eyes and black nose. SAME plain dark-sage collar, no tag, no clothing. Gentle dignified senior dog, not ill or injured, not a puppy. Pure white background, evenly lit, NO scenery, NO typography, NO labels, NO watermark. Reference image is ONLY for loose fine linework, muted palette and thin gentle paint, not its people or medical content. S13 intimate soft-light narrative illustration: desaturated warm gray, dusty rose, gray-blue and deep charcoal green; fine, slightly loose linework with thin painted layers, diffused side light, low contrast, soft volume and subtle grain. Keep eyes, gestures and contact points clear, soften secondary background edges. Quiet, intimate and tender; no symbolic tears, exaggerated expressions, saturated flat graphics, harsh black shadows, photorealism, strong lens flare or crowded backgrounds.
+</code></pre>
+<h3>共同體型設定</h3>
+<p><strong>中文</strong></p>
+<pre><code class="language-text">生成共同體型設定圖，16:9 白背景、均勻光線。只畫一位小禾與一隻阿栗，同一地面、同一景深。少女158公分，犬肩37公分、耳尖約53公分，犬肩略低於少女膝部；身高比例以定稿共同體型圖優先。少女不持傘，避免道具妨礙判讀。不加其他角色、文字、尺標或背景。S13 霧灰柔光情感敘事：低彩度暖灰、灰粉、灰藍與深炭綠，細而略鬆的線稿結合薄層塗繪；漫射側光、低對比、柔和體積與輕微顆粒。手勢、眼神和接觸處清楚，次要背景邊緣柔化。安靜、親密、有溫暖餘韻；不以淚水或誇張表情代替情緒。避免高彩平塗、硬黑陰影、攝影寫實、過強炫光及繁密背景。
+</code></pre>
+<p><strong>English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE landscape 16:9 shared CHARACTER SCALE SHEET, pure white background, even lighting, NO text, NO arrows or ruler. Show exactly ONE full-body girl standing front three-quarter, and ONE elderly Shiba standing in strict side profile next to her, on the SAME horizontal ground baseline, same depth, realistic relative scale. GIRL height158cm, DOG shoulder37cm and crown53cm, so dog's shoulder is just below girl's knee and its crown near her knee, not waist height. Match first reference girl precisely (dark-brown bob, dusty-rose raincoat hood down, five buttons, two patch pockets, gray-blue trousers, charcoal boots), hands relaxed, NO umbrella in hand and NO extra accessory drawings. Match second reference senior Shiba precisely: honey-tan with aged creamy white muzzle and gray-white eyebrows, dark-sage collar, curled tail, four legs. Preserve S13 fine loose linework and thin soft painted layers. Leave generous white space. Do not repeat characters. No labels or watermark.
+</code></pre>
+<h2>八、交付檔案與驗證</h2>
+<ul>
+<li>圖像使用內建 image_gen 生成及修正，15 張定稿 PNG 全部存入本片專案資料夾。</li>
+<li>三張角色圖原始尺寸為 <strong>1672×941</strong>；十二張直式海報／分鏡為 <strong>941×1672</strong>。這是生成工具的取整畫布，接近 16:9／9:16，並非像素比例完全精確。</li>
+<li>建議精確剪輯畫布 <strong>1080×1920、30 fps</strong>，全片 1800 幀、每段 150 幀；圖像等比填滿後居中微裁邊緣，不拉伸角色。角色圖若需精確 16:9，可置入 1920×1080 畫布等比填滿。保留原始 PNG；比例取整差異約 0.05%。</li>
+<li>中文字幕與英文字幕各一個 UTF-8 SRT 檔；可分別輸出單語，或在剪輯軟體合併雙語。字幕避免壓住人物手勢、柴犬眼睛與平台介面。</li>
+<li>已目視檢查角色視角、白背景、雨衣與傘的外觀、柴犬斑紋、主要手勢、海報文字及鏡頭內容。共同比例、04／07 犬身大小與角落生成痕跡曾修正；02／03 使用重新生成的乾淨版本，捨棄版本不列為正式資產。</li>
+<li>生成式插畫仍會有局部線條及透視差異；定稿參考圖持續作為後續影片的外觀、比例與道具依據。影片生成後須另檢查臉部漂移、手與傘斷接、肢體增生、犬毛與年齡變化、倒影分裂、雨滴／文字閃爍及實際片長。</li>
+<li><a >資產清單</a>記錄逐檔尺寸、SHA-256、位元組與來源，便於核對；<a href="../index.html">圖像總覽</a>供離線瀏覽。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th style="text-align: right;">數量</th>
+<th>本輪狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>確認企劃、雙語片名與副標題</td>
+<td style="text-align: right;">1 部</td>
+<td>已整理與校對</td>
+</tr>
+<tr>
+<td>雙語分鏡、字幕、小標題</td>
+<td style="text-align: right;">10 鏡</td>
+<td>已整理與校對</td>
+</tr>
+<tr>
+<td>雙語分鏡圖像提示詞</td>
+<td style="text-align: right;">10 組</td>
+<td>已交付</td>
+</tr>
+<tr>
+<td>雙語影片提示詞</td>
+<td style="text-align: right;">12 組</td>
+<td>已交付，含片頭片尾</td>
+</tr>
+<tr>
+<td>獨立角色四視角圖</td>
+<td style="text-align: right;">2 張</td>
+<td>已生成並目視檢查</td>
+</tr>
+<tr>
+<td>共同體型比例圖</td>
+<td style="text-align: right;">1 張</td>
+<td>已生成並目視檢查</td>
+</tr>
+<tr>
+<td>片頭片尾海報</td>
+<td style="text-align: right;">2 張</td>
+<td>已生成，四段文字已核對</td>
+</tr>
+<tr>
+<td>正式分鏡圖</td>
+<td style="text-align: right;">10 張</td>
+<td>已生成並目視檢查</td>
+</tr>
+<tr>
+<td>中文／英文字幕</td>
+<td style="text-align: right;">各 1 檔</td>
+<td>已建立</td>
+</tr>
+<tr>
+<td>動態影片、60 秒剪輯成片</td>
+<td style="text-align: right;">—</td>
+<td>未生成；本輪交付影片提示詞</td>
+</tr>
+</tbody>
+</table>
+<p>本片已完成上述圖像與製作文件。方案 03–10 保留原企劃，後續依序製作，不標記為已完成素材。</p></body></html>

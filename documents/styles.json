@@ -1,0 +1,544 @@
+{
+  "title": "日本當代插畫參考・風格分析與分鏡提示詞庫",
+  "date": "2026-10-22",
+  "source": "使用者提供的 00.jpg–16.jpg；書籍名稱與來源依使用者說明。",
+  "note": "分類為本次創作使用的描述性分類，非書中官方分類；媒材名稱描述外觀，不代表已確認製作技法。未辨識作者，未進行生成測試。",
+  "families": [
+    {
+      "id": "A",
+      "name": "高對比平塗設計",
+      "ids": [
+        "01",
+        "11"
+      ],
+      "key": "用大色塊、明確輪廓與負空間組織畫面；01 偏繁複和風，11 偏簡潔冷暖撞色。"
+    },
+    {
+      "id": "B",
+      "name": "低彩度電影敘事",
+      "ids": [
+        "02",
+        "08",
+        "13"
+      ],
+      "key": "用空間、光線、遮擋與人物關係營造故事；02 偏儀式，08 偏冷冽都市，13 偏柔光情感。"
+    },
+    {
+      "id": "C",
+      "name": "細密裝飾幻想",
+      "ids": [
+        "03"
+      ],
+      "key": "以精細重複紋理、柔和體積與盤繞裝飾建立近距離觀賞性。"
+    },
+    {
+      "id": "D",
+      "name": "時裝與人物肖像",
+      "ids": [
+        "04",
+        "05",
+        "12"
+      ],
+      "key": "以人物造型作核心；04 偏珠寶材質，05 偏硬邊復古，12 偏俯視叛逆時裝。"
+    },
+    {
+      "id": "E",
+      "name": "限色線稿與印刷肌理",
+      "ids": [
+        "06"
+      ],
+      "key": "高明度留白、強線條、青藍限色，混合網點與斑駁表面。"
+    },
+    {
+      "id": "F",
+      "name": "糖果色魔法少女",
+      "ids": [
+        "07"
+      ],
+      "key": "粉彩高明度、圓潤造型、亮眼與裝飾性星光。"
+    },
+    {
+      "id": "G",
+      "name": "繪畫性留白幻想",
+      "ids": [
+        "09"
+      ],
+      "key": "以流動筆觸、藍白色階、金箔般點綴及大片留白營造詩性。"
+    },
+    {
+      "id": "H",
+      "name": "黑白敘事漫畫",
+      "ids": [
+        "10"
+      ],
+      "key": "以黑白面積、排線、網點、尺度對比與動勢取代色彩。"
+    },
+    {
+      "id": "I",
+      "name": "復古都市科幻漫畫",
+      "ids": [
+        "14"
+      ],
+      "key": "手繪墨線、柔和套色與清楚街景透視，將奇異裝備放入日常環境。"
+    },
+    {
+      "id": "J",
+      "name": "誇張透視流行漫畫",
+      "ids": [
+        "15",
+        "16"
+      ],
+      "key": "以尖銳輪廓、放大前景手勢與大表情帶動視覺；15 偏冷色怪誕，16 偏亮色派對。"
+    }
+  ],
+  "cards": [
+    {
+      "id": "01",
+      "family": "A",
+      "name": "朱紅和風裝飾平塗",
+      "palette": [
+        "朱紅",
+        "墨黑",
+        "金赭",
+        "青綠"
+      ],
+      "colors": [
+        "#df3c22",
+        "#17201d",
+        "#dca94e",
+        "#177f91"
+      ],
+      "observation": "人物持扇，頭飾與衣裝帶有花卉、幾何及金色紋樣。黑色輪廓線包住大色面，皮膚陰影較簡潔；朱紅背景與黑色形狀形成強對比，青綠衣料提供冷色焦點。",
+      "composition": "直幅中近景；頭飾、長袖與扇面形成斜向交錯，人物臉部周圍保留較乾淨的淺色區域。",
+      "distinction": "重點是繁密圖案與平塗色塊的結合。與 11 的簡潔幾何平塗相比，01 的裝飾密度明顯更高。",
+      "anchors": "粗細有別的深色輪廓、大面積朱紅與墨黑、局部金赭和青綠、少量階梯陰影、裝飾性節奏。",
+      "variable": "和服、扇子、花朵與頭飾均屬可替換題材；可換成外套、樂器或都市道具。",
+      "zh": "高對比裝飾性人物插畫，清晰且粗細有別的深色輪廓線，大面積朱紅與墨黑色塊，金赭及青綠作局部點綴，乾淨平塗與少量硬邊陰影，修長優雅的人物造型，裝飾紋樣集中於服裝及道具，臉部保持清楚簡潔，具有強烈的平面設計節奏。",
+      "en": "Graphic decorative character illustration with crisp, varied dark contours, broad vermilion and ink-black color fields, selective ochre-gold and teal accents, clean flat fills and restrained hard-edged shadows. Elegant elongated forms, ornamental patterns concentrated on clothing and props, a clean readable face, and a strong rhythmic graphic structure.",
+      "avoid": "避免全面柔焦、寫實皮膚毛孔、均勻鋪滿細節；金色點綴不必自動變成發光特效。",
+      "avoidEn": "Avoid photographic skin pores, all-over soft focus, uniformly dense detail, and glowing effects on every gold accent.",
+      "motion": "適合人物亮相、扇面開合、衣袖或髮帶緩慢飄動；鏡頭可緩推近。",
+      "risk": "紋樣與頭飾過密時，連續幀容易出現位置跳動；先固定主要圖案與髮飾數量。"
+    },
+    {
+      "id": "02",
+      "family": "B",
+      "name": "暗金儀式感敘事厚塗",
+      "palette": [
+        "藍灰",
+        "深墨綠",
+        "暗金",
+        "酒紅"
+      ],
+      "colors": [
+        "#596872",
+        "#172f35",
+        "#b38a42",
+        "#6d2928"
+      ],
+      "observation": "黑髮人物的衣袖與上身被周圍數隻戴手套的手接觸；金色鶴與花枝紋樣集中在衣料，前景紅花及階梯帶有模糊感。背景垂直結構與低彩度暗部襯托金色衣料。",
+      "composition": "人物偏轉並回望；周圍手臂造成包圍與引導，前景、人物、背景形成分層。",
+      "distinction": "與 01 同有華麗衣裝，但 02 依靠明暗體積、柔硬邊緣與場景深度。畫面暗示儀式或緊張關係，具體劇情無法由單張確認。",
+      "anchors": "低彩度冷暗底色、局部暗金材質、細線與塗繪體積並用、前景遮擋、克制表情。",
+      "variable": "金鶴刺繡、手套、花朵與服裝可替換；被圍繞的人物關係屬敘事構圖選項。",
+      "zh": "帶有儀式感的電影式人物插畫，低彩度藍灰與深墨綠暗部，局部暗金材質和極少量酒紅點綴，細緻輪廓與柔和塗繪體積並用，衣料具重量及細密裝飾，柔硬邊緣交替，前景遮擋與柔化背景建立空間，克制表情與安靜緊張感。",
+      "en": "Cinematic character illustration with a ceremonial mood, desaturated blue-gray and deep green-black shadows, selective antique-gold material accents and a trace of burgundy. Fine contours combined with softly painted volume, weighty decorated fabric, alternating soft and sharp edges, foreground occlusion and subdued background depth, restrained expressions and quiet tension.",
+      "avoid": "避免霓虹泛光、鮮豔全色域、純平塗；不要把畫中多隻手當成每個場景都必須出現的元素。",
+      "avoidEn": "Avoid neon bloom, uniformly saturated colors, purely flat rendering, and unnecessary extra hands around the subject.",
+      "motion": "適合衣料整理、緩慢轉頭、手部細節與儀式片段；可從金色衣紋切到眼神。",
+      "risk": "多人手部交疊及刺繡容易漂移；分鏡中可將複雜交接拆成單一動作與局部特寫。"
+    },
+    {
+      "id": "03",
+      "family": "C",
+      "name": "冷白細密裝飾幻想",
+      "palette": [
+        "瓷白",
+        "銀灰",
+        "灰綠",
+        "墨黑"
+      ],
+      "colors": [
+        "#e6eeee",
+        "#aab8c4",
+        "#b8c5ba",
+        "#343b3e"
+      ],
+      "observation": "白蛇、花枝、繩結、珠飾圍繞人物與髮型，蛇身有密集鱗片；整體為冷白與銀灰，眼睛和葉片帶少量綠色。臉、手、蛇身以柔和漸層建立圓潤體積。",
+      "composition": "近乎滿版的直幅裝飾肖像，盤繞曲線反覆穿插；臉部在大量細節中形成主要情緒焦點。",
+      "distinction": "與 09 同有幻想和裝飾感，但 03 是輪廓精密、物件可辨、細節均可近看；09 更依賴筆觸與疏密流動。",
+      "anchors": "冷白銀灰限色、細緻描線、柔和體積、精密重複紋理、盤繞曲線、安靜而奇異。",
+      "variable": "蛇、花、和服及珠飾可替換成藤蔓、陶瓷構件、羽毛或其他裝飾母題。",
+      "zh": "精密裝飾性幻想插畫，冷白、銀灰與淡灰綠的克制配色，極細輪廓與柔和漸層塑造圓潤體積，瓷質般細膩表面，精緻重複紋理與珠飾般微小亮點，盤繞曲線和植物性裝飾形成層次，人物五官清楚，氣氛安靜、神秘而華麗。",
+      "en": "Intricate ornamental fantasy illustration in restrained porcelain white, silver-gray and pale sage. Delicate contours and soft gradients describe rounded forms, with smooth porcelain-like surfaces, precise repeating textures and tiny pearl-like highlights. Interwoven curves and botanical ornament create layered detail around a clearly readable face, producing a quiet, mysterious elegance.",
+      "avoid": "避免粗黑外框、強烈霓虹、塑膠般過度高光，以及細節覆蓋眼睛和嘴部。",
+      "avoidEn": "Avoid heavy black outlines, neon colors, harsh plastic shine, and ornament obscuring the eyes or mouth.",
+      "motion": "適合緩推近、眨眼、枝葉微動與飾物輕擺；可用分層視差展示深度。",
+      "risk": "鱗片、繩結與多條盤繞物容易改變拓撲；宜降低獨立移動物件數量，避免同時大幅纏繞。"
+    },
+    {
+      "id": "04",
+      "family": "D",
+      "name": "冷綠珠寶質感肖像",
+      "palette": [
+        "深青綠",
+        "暖膚色",
+        "棕黑",
+        "亮銀"
+      ],
+      "colors": [
+        "#174e54",
+        "#bca18b",
+        "#302b25",
+        "#dce5e4"
+      ],
+      "observation": "短髮人物正面近距離肖像，藍綠眼睛、細密睫毛與髮絲突出；頸部多層銀鍊和亮面手套具有局部銳利高光，背景是單純深青綠。",
+      "composition": "緊裁切頭肩像；雙手靠近臉側，銀色材質形成面部框架。",
+      "distinction": "04 的魅力來自皮膚、頭髮、金屬三種材質對比；05 更依靠平面硬陰影，08 更依靠場景與環境光。",
+      "anchors": "暖膚與冷綠背景對照、細髮絲、柔和皮膚體積、銳利局部金屬高光、近距離凝視。",
+      "variable": "短髮、珠寶、手套與眼睛顏色可替換；保留材質之間的光澤差異。",
+      "zh": "精緻時裝肖像插畫，介於動漫造型與寫實體積之間，暖膚色對比深青綠背景，細密髮絲與睫毛，皮膚以柔和明暗塑形，金屬配件具有小而銳利的銀白高光，冷暖材質對照，五官清晰，表情克制而有吸引力，背景簡潔。",
+      "en": "Refined fashion portrait illustration balancing anime stylization with naturalistic volume. Warm skin tones against deep teal, finely separated hair strands and eyelashes, softly modeled skin, and small sharp silver-white highlights on metallic accessories. Clear facial features, restrained expression, contrasting material finishes, and an uncluttered background.",
+      "avoid": "避免全臉過曝、所有材質同樣光滑、過度磨皮、讓珠寶細節搶過眼神。",
+      "avoidEn": "Avoid blown-out faces, identical gloss on every material, excessive skin smoothing, and jewelry overpowering the eyes.",
+      "motion": "適合美妝、珠寶、人物情緒特寫；微轉頭或一隻手輕觸耳飾即可。",
+      "risk": "鏈節與多層珠寶容易閃爍；固定主項鍊輪廓，遠景可減少鏈節細節。"
+    },
+    {
+      "id": "05",
+      "family": "D",
+      "name": "赭棕青綠復古時裝",
+      "palette": [
+        "赭棕",
+        "橘紅",
+        "深青綠",
+        "珊瑚膚色"
+      ],
+      "colors": [
+        "#97714d",
+        "#d77450",
+        "#073d49",
+        "#e7a18a"
+      ],
+      "observation": "橘髮人物托腮，青綠鏡片、條紋西裝和飾品構成時裝造型。髮束分成雕塑般的大塊弧面，臉部及手部陰影邊界明確，棕色背景幾乎不提供空間細節。",
+      "composition": "正面半身肖像，手、墨鏡及眉眼構成中央視覺節點；垂直西裝細條紋穩定畫面。",
+      "distinction": "比 04 更偏硬邊概括與復古配色；比 11 保留更多臉部結構與局部繪畫肌理。",
+      "anchors": "赭棕與青綠對照、橘紅焦點、雕塑般髮束、幾何明暗面、少量顆粒、簡單背景。",
+      "variable": "墨鏡形狀、髮色、性別、西裝與首飾可換；保留大形、配色比例與硬邊陰影。",
+      "zh": "復古時裝編輯插畫，赭棕背景搭配深青綠及橘紅焦點，人物結構清楚，髮束以雕塑般的大塊弧面概括，臉部與手部採用幾何化硬邊明暗，局部保留輕微顆粒與筆觸，配件有克制的高光，整體沉著、俐落且帶時髦感。",
+      "en": "Retro fashion editorial illustration with an ochre-brown ground, deep teal and focused orange-red accents. Clearly structured anatomy, sculptural grouped hair shapes, geometric hard-edged light and shadow on the face and hands, subtle local grain and brush texture, and restrained accessory highlights. Composed, sharp and stylish.",
+      "avoid": "避免霓虹漸層、全面柔焦、過細髮絲與攝影式皮膚質感。",
+      "avoidEn": "Avoid neon gradients, all-over soft focus, excessively fine hair strands, and photographic skin texture.",
+      "motion": "適合配件展示、調整眼鏡、抬眼、時裝換裝與節拍切鏡。",
+      "risk": "墨鏡和手指遮擋面部時容易改變五官；先建立沒有遮擋的角色基準圖。"
+    },
+    {
+      "id": "06",
+      "family": "E",
+      "name": "青白網點斑駁幻想",
+      "palette": [
+        "紙白",
+        "青綠",
+        "灰藍",
+        "墨黑"
+      ],
+      "colors": [
+        "#eff1e9",
+        "#41b6bd",
+        "#718ca5",
+        "#172127"
+      ],
+      "observation": "白髮大眼角色被羽翼、弧形構件及片狀結構包圍。深色墨線、灰藍網點與青色斑駁色面交錯，大片淺色區仍保留線條，並有少量粉膚及橘紅細節。",
+      "composition": "直幅旋轉式包圍構圖，羽翼與長條形狀從四周指向角色；細節密集但明度整體偏高。",
+      "distinction": "雖同樣有細線與幻想題材，06 以墨線、網點及剝落般肌理為主，與 03 的平滑精密表面不同。",
+      "anchors": "青白限色、粗細交錯墨線、網點灰階、局部斑駁、白色大形、略帶脆弱感的可愛造型。",
+      "variable": "羽翼、短髮與周圍構件可替換；保留線稿、印刷灰階與不均勻色面之間的層次。",
+      "zh": "青白限色幻想漫畫插畫，紙白與青綠為主，灰藍作陰影，粗細交錯的深色墨線，大片淺色形體與精細內部線條並存，局部半色調網點、斑駁剝落般色面和輕微印刷肌理，造型可愛而帶奇異感，視覺層次清楚。",
+      "en": "Limited-palette fantasy manga illustration in paper white and turquoise with blue-gray shadows. Varied dark ink lines combine broad pale shapes with fine internal drawing. Selective halftone shading, distressed color patches and subtle print texture create layered surfaces, with appealing stylized forms and a slightly uncanny atmosphere.",
+      "avoid": "避免全圖髒污化、暗黑厚塗、光滑 3D 塑膠質感；肌理應留在局部。",
+      "avoidEn": "Avoid uniform grime, dark heavy painting, smooth 3D plastic rendering, and texture covering every surface.",
+      "motion": "適合奇異世界片頭、羽片輕動、視差旋轉；紙張與網點肌理可在後製固定疊加。",
+      "risk": "網點、細線與斑駁紋理可能逐幀閃爍；若影片工具不穩，生成較乾淨底圖再加固定肌理。"
+    },
+    {
+      "id": "07",
+      "family": "F",
+      "name": "粉彩糖果魔法",
+      "palette": [
+        "櫻粉",
+        "薄荷青",
+        "薰衣草紫",
+        "奶油黃"
+      ],
+      "colors": [
+        "#efb5cf",
+        "#b4e8e8",
+        "#b8acd6",
+        "#f2da91"
+      ],
+      "observation": "兩位人物、大眼高光、粉色髮辮、蝴蝶結、星形裝飾及魔法杖構成主體。粉、青、淡紫的明亮色面搭配深色輪廓，陰影以彩色變化表現，黑色面積小。",
+      "composition": "雙人近景以傾斜頭部和環繞髮束連接；裝飾密度高，但用明度與輪廓維持辨識。",
+      "distinction": "與 16 同樣鮮明而裝飾性強，07 更圓潤、柔甜且高明度；16 的黑色面積與尖銳輪廓更強。",
+      "anchors": "粉青紫高明度配色、清楚輪廓、圓潤五官、玻璃珠般眼睛、彩色陰影、節制星光。",
+      "variable": "雙人、魔法杖、髮辮和制服可替換；甜美感不必依賴原圖角色或固定道具。",
+      "zh": "高明度糖果粉彩動漫插畫，櫻粉、薄荷青、淡紫與奶油黃配色，乾淨深色輪廓，圓潤人物造型，明亮玻璃珠般眼睛，多層小高光，柔和的彩色賽璐璐陰影，飄逸髮束與輕盈裝飾，少量星形閃光，氣氛甜美、歡快而夢幻。",
+      "en": "High-key candy-pastel anime illustration in blossom pink, mint cyan, pale lavender and cream yellow. Clean dark contours, rounded character design, luminous glass-like eyes with layered small highlights, gentle colored cel shadows, flowing hair shapes and light decorative accents. A few star-shaped sparkles support a sweet, buoyant, dreamlike mood.",
+      "avoid": "避免低調黑暗照明、髒灰陰影、全身過度發光，以及裝飾遮住角色表情。",
+      "avoidEn": "Avoid low-key dark lighting, muddy gray shadows, excessive all-over glow, and decoration obscuring expressions.",
+      "motion": "適合輕快轉身、變身揭示、雙人互動和星光點綴；以一個主要動作搭配少量飾物運動。",
+      "risk": "雙人髮辮交疊與大量小飾品容易串位；固定角色各自髮色、配件及畫面位置。"
+    },
+    {
+      "id": "08",
+      "family": "B",
+      "name": "冷灰都市暗調電影感",
+      "palette": [
+        "煤黑",
+        "冷灰紫",
+        "灰膚色",
+        "暗紅"
+      ],
+      "colors": [
+        "#172122",
+        "#797a8a",
+        "#b7a1ad",
+        "#7e3336"
+      ],
+      "observation": "長黑髮人物在室內吧台般的空間倒出深紅色液體，眼部及花紋刺青也有紅色重點。背景柔化，人物邊緣有冷色亮線，畫面呈現可見顆粒與塗繪痕跡。",
+      "composition": "直幅中景；手臂、酒杯及流下的液體形成斜向動線，人物大暗面與背景亮灰區分離。",
+      "distinction": "相較 04 的乾淨材質肖像，08 用環境、景深與局部光建立氣氛。紅眼與刺青是角色設定，不是風格必要條件。",
+      "anchors": "冷灰低彩度、深黑大形、暗紅小焦點、柔化背景、局部輪廓光、可見細顆粒與筆觸。",
+      "variable": "紅眼、刺青、酒杯和室內位置皆可替換；保留環境光與人物明暗關係。",
+      "zh": "冷冽都市電影感人物插畫，低彩度冷灰紫與煤黑色調，少量暗紅作視覺焦點，帶手繪痕跡的半寫實塗繪，皮膚明暗柔和，髮絲與衣料局部邊緣銳利，側後方冷色輪廓光，柔化環境背景與細緻顆粒，氛圍疏離、安靜而帶懸念。",
+      "en": "Moody urban cinematic character illustration in desaturated cool gray-violet and charcoal black with sparse dark-red accents. Semi-realistic painted forms retain visible brushwork, softly modeled skin, selective sharp hair and fabric edges, cool side-back rim light, a softened environmental background and fine grain. Detached, quiet and suspenseful.",
+      "avoid": "避免滿版霓虹、純黑吞掉所有細節、過度銳化與油亮塑膠皮膚。",
+      "avoidEn": "Avoid all-over neon, featureless crushed blacks, excessive sharpening, and oily plastic skin.",
+      "motion": "適合倒水、抬眼、緩慢轉身、杯子反光或都市懸疑片段。",
+      "risk": "透明杯體、液流和刺青同時運動容易失真；可拆成手部倒液特寫與人物反應鏡頭。"
+    },
+    {
+      "id": "09",
+      "family": "G",
+      "name": "藍白金箔感流動繪畫",
+      "palette": [
+        "留白",
+        "水藍",
+        "深靛藍",
+        "斑駁金"
+      ],
+      "colors": [
+        "#f7f8f3",
+        "#64c6ec",
+        "#173e58",
+        "#b59855"
+      ],
+      "observation": "橫向畫面中，人物位於右側，長髮、衣料、藍色植物般形狀與金色片狀肌理向左延伸。可見不完全平滑的塗繪筆觸，白色背景形成大面積呼吸空間；金色呈金箔般視覺效果。",
+      "composition": "人物與衣髮呈側向伸展，橫向流動曲線主導；留白與密集區形成明顯疏密節奏。",
+      "distinction": "與 03 的逐一細描相比，09 更重視筆觸、大形和空白；金色外觀不能據此確認實際使用金箔或特定顏料。",
+      "anchors": "藍白限色、局部深靛藍、金箔般斑駁點綴、可見塗繪筆觸、大片留白、流動長曲線。",
+      "variable": "植物形狀、服飾、長髮與橫向姿勢可替換；轉為直幅時需重排曲線方向。",
+      "zh": "詩性幻想人物插畫，藍白限色搭配局部深靛藍及金箔般斑駁點綴，保留可見的不透明顏料筆觸與不規則色層，形體以流動長曲線相連，大片乾淨留白與密集裝飾交替，五官精簡清晰，氣氛輕盈、靜謐而有漂浮感。",
+      "en": "Lyrical fantasy character illustration in blue and white, with selective deep indigo and mottled gold-leaf-like accents. Visible opaque-paint brushwork and irregular color layers, forms connected by long flowing curves, generous clean negative space alternating with concentrated ornament, and simplified readable facial features. Airy, quiet and gently suspended.",
+      "avoid": "避免滿版細節、均勻金屬鍍膜、攝影寫實與無處不在的發光粒子。",
+      "avoidEn": "Avoid filling all negative space, uniform metallic coating, photographic realism, and ubiquitous glowing particles.",
+      "motion": "適合長髮、衣料或葉片緩慢漂移；可讓鏡頭沿曲線移動。",
+      "risk": "細長形狀容易纏結；09 原圖為橫幅，直式影片應重新構圖，不能直接裁切後期待保留原有節奏。"
+    },
+    {
+      "id": "10",
+      "family": "H",
+      "name": "黑白神怪動勢漫畫",
+      "palette": [
+        "紙白",
+        "淺網灰",
+        "深網灰",
+        "純黑"
+      ],
+      "colors": [
+        "#f2f1eb",
+        "#c0c0bc",
+        "#777977",
+        "#141916"
+      ],
+      "observation": "人物與大型蛇／龍形生物在旋轉構圖中交錯，黑白色塊、細排線與網點建立材質和空間。毛髮、鱗片、水流般曲線與繩索提供不同方向的線條節奏。",
+      "composition": "人物位於巨大生物之間，尺度落差強；彎曲獸身與大斜線形成包圍、拉力與速度感。",
+      "distinction": "10 的主要辨識度是黑白明度設計、墨線與動勢；不宜只把彩圖去色就當成同一風格。",
+      "anchors": "純黑白基調、網點階調、精細排線、粗細線對比、強烈剪影、尺度差與弧線動勢。",
+      "variable": "蛇龍、武器、繩索與傳統衣裝均可替換；動作幅度和鏡頭傾斜是可選的分鏡設定。",
+      "zh": "高張力黑白敘事漫畫，純黑與紙白構成主要明暗，灰階由半色調網點與精細排線建立，粗細墨線交替，人物與環境具有清楚剪影，材質細節依視覺重點集中，弧線和斜向節奏強烈，畫面有尺度感與戲劇張力。",
+      "en": "Dramatic black-and-white narrative manga with bold ink-black masses and paper-white highlights. Halftone screens and fine hatching build intermediate values, varied ink line weights define clear silhouettes, and texture is concentrated around focal areas. Curved and diagonal rhythms create a strong sense of scale and dramatic tension.",
+      "avoid": "避免只是彩圖去色、均勻灰霧、照片灰階與線條密到無法辨識動作。",
+      "avoidEn": "Avoid merely desaturating a color painting, uniform gray haze, photographic grayscale, and line density that obscures the action.",
+      "motion": "適合動作高潮、神怪揭示、慢推加局部動態，或以關鍵畫格剪輯呈現。",
+      "risk": "多條獸身、繩索和密集排線在大幅動作中容易改形；預估以分段動作或有限動畫較容易控制。"
+    },
+    {
+      "id": "11",
+      "family": "A",
+      "name": "鈷藍朱紅極簡平塗",
+      "palette": [
+        "鈷藍",
+        "朱紅",
+        "墨黑",
+        "淡青白"
+      ],
+      "colors": [
+        "#1056a5",
+        "#ed2925",
+        "#12201c",
+        "#dceee9"
+      ],
+      "observation": "藍髮人物與藍色背景相連，大片紅色布面或形狀、黑色衣裝及零星淡青形狀形成色塊對比。臉部高明度，服裝陰影較少，少數前景碎片帶柔化效果。",
+      "composition": "橫幅，人物偏右、左側留出大色面；髮帶、衣料及前景形狀建立斜向動勢。",
+      "distinction": "與 01 同屬高對比平塗，但 11 減少紋樣，更多依賴少數主色、乾淨輪廓與大面積留空。",
+      "anchors": "鈷藍為主、朱紅對比、黑色支撐、淡色臉部焦點、少量階梯陰影、大片負空間。",
+      "variable": "髮色、服裝與飄帶可替換；可保留同樣色彩配置而改換角色或場景。",
+      "zh": "現代平面設計感動漫插畫，大面積鈷藍、朱紅與墨黑構成畫面，淡青白作小面積高明度焦點，乾淨銳利輪廓，精簡色面與少量階梯式陰影，清楚剪影及大面積負空間，細節集中於人物表情，整體俐落、冷靜而有節奏。",
+      "en": "Modern graphic anime illustration built from broad cobalt-blue, vermilion and ink-black shapes, with pale cyan-white focal accents. Crisp contours, simplified flat color planes, a small number of cel-shadow steps, clear silhouettes and generous negative space. Detail concentrates on expression, producing a sharp, poised visual rhythm.",
+      "avoid": "避免繁密花紋、厚塗毛孔、所有色面加入漸層，以及背景填滿雜物。",
+      "avoidEn": "Avoid dense ornament, heavily painted skin pores, gradients on every shape, and clutter filling the background.",
+      "motion": "適合音樂短片、角色標誌性出場、髮帶或布面飄動、節拍式色塊轉場。",
+      "risk": "較少紋理有利於簡化畫面，但臉部與色塊邊界仍需檢查；原圖橫幅改直幅時應保留一側負空間。"
+    },
+    {
+      "id": "12",
+      "family": "D",
+      "name": "俯視叛逆時裝編輯",
+      "palette": [
+        "灰藍白",
+        "深黑綠",
+        "粉膚",
+        "冰青"
+      ],
+      "colors": [
+        "#cdd6e7",
+        "#14251f",
+        "#e5a0a4",
+        "#8dd2d9"
+      ],
+      "observation": "俯視人物身穿尖刺泡袖黑色服裝，藍色蝴蝶結與規律星形圖案點綴。右後方有椅子，背景大面積淺灰藍；服裝採用少量深色階與局部體積。",
+      "composition": "強烈俯視，頭肩比例受透視放大，人物直視鏡頭；右側椅子提供空間及不對稱平衡。",
+      "distinction": "與 05 的正面復古肖像不同，12 的重點是鏡頭角度、時裝輪廓、黑色量體與清淡背景的對比。",
+      "anchors": "大黑色時裝剪影、淡灰藍背景、粉膚冷暖對比、乾淨輪廓、有限體積、規律圖形點綴。",
+      "variable": "尖刺、泡袖、星星、椅子與俯視角度可依場景調整；俯視屬構圖模組。",
+      "zh": "帶叛逆氣質的時裝編輯插畫，乾淨細輪廓與有限的賽璐璐體積，深黑綠服裝形成大膽雕塑式剪影，淡灰藍背景，粉膚色與冰青小配件對照，裝飾幾何圖形稀疏而規律，五官銳利，整體簡潔、時髦並帶輕微超現實感。",
+      "en": "Rebellious fashion editorial illustration with clean fine contours and restrained cel-modeled volume. Deep green-black clothing forms a bold sculptural silhouette against pale blue-gray, balanced by pink skin tones and small icy-cyan accessories. Sparse rhythmic geometric accents, sharp facial features, and a clean, stylish, slightly surreal presentation.",
+      "avoid": "避免所有暗部完全無層次、繁雜場景、霓虹燈污染；不要每一鏡都強制同一俯視角。",
+      "avoidEn": "Avoid featureless dark clothing, busy environments, pervasive neon lighting, and forcing the same overhead angle on every shot.",
+      "motion": "適合時裝亮相、走近鏡頭、抬頭看鏡頭、肩部姿態與圖形後製動效。",
+      "risk": "尖刺數量和泡袖輪廓容易改變；角色設定圖要固定服裝結構，背景星形可後製添加。"
+    },
+    {
+      "id": "13",
+      "family": "B",
+      "name": "霧灰柔光情感敘事",
+      "palette": [
+        "暖灰",
+        "灰粉",
+        "灰藍",
+        "深炭綠"
+      ],
+      "colors": [
+        "#b6aaa5",
+        "#d1b4af",
+        "#8995a9",
+        "#293c3a"
+      ],
+      "observation": "一位戴呼吸面罩的人物躺在床上，另一位白髮人物靠近床邊；手部接觸、上方柔光與半透明小畫面共同構成情緒。整體有輕薄筆觸、低對比與霧灰色調。",
+      "composition": "傾斜俯視雙人構圖，床緣、管線與手臂將視線引向接觸處；半透明畫面暗示回憶或投影，但具體故事不明。",
+      "distinction": "與 02、08 同樣偏敘事塗繪，13 更柔、低對比，重心是人物關係而非物件華麗度或冷酷氣場。",
+      "anchors": "低彩度暖灰與灰藍、細而略鬆的線稿、薄層塗繪、柔散光、柔硬邊緣、細膩手勢。",
+      "variable": "病床、面罩、投影與雙人設定可替換；此風格可用於重逢、離別、陪伴等原創場景。",
+      "zh": "柔光情感敘事插畫，低彩度暖灰、灰粉與灰藍色調，細而略帶鬆動的線稿結合薄層塗繪，皮膚及衣料明暗柔和，漫射側光、低對比和輕微顆粒，清晰的關鍵手勢與表情，其他邊緣適度柔化，氣氛親密、安靜而帶餘韻。",
+      "en": "Intimate narrative illustration in desaturated warm gray, dusty rose and gray-blue. Fine, slightly loose linework combines with thin painted layers, softly modeled skin and fabric, diffused side light, low contrast and subtle grain. Key gestures and expressions stay readable while secondary edges soften, creating a quiet, tender emotional afterglow.",
+      "avoid": "避免用過量哭泣符號代替情緒、過強炫光、深黑硬陰影與所有細節同等清晰。",
+      "avoidEn": "Avoid excessive symbolic tears, overpowering lens flare, harsh black shadows, and equally sharp detail everywhere.",
+      "motion": "適合手指輕握、呼吸、微微靠近、窗光變化與記憶切鏡；節奏可放慢。",
+      "risk": "雙人接觸及半透明疊影容易混合五官；回憶畫面宜分鏡剪接或後製疊加，避免同次生成過多人物層。"
+    },
+    {
+      "id": "14",
+      "family": "I",
+      "name": "柔彩復古都市科幻",
+      "palette": [
+        "奶油黃",
+        "灰紫",
+        "薄荷綠",
+        "桃紅"
+      ],
+      "colors": [
+        "#efdb7c",
+        "#b1a4cc",
+        "#84c5a9",
+        "#e73d83"
+      ],
+      "observation": "前景人物穿黃色奇異裝備，後方另一人物坐在街景構件上。建築、管線、巴士站牌及圍欄建立清楚空間；平塗柔彩與黑色手繪線並存，上方桃紅手寫字是版面元素。",
+      "composition": "前大後小的雙人街景，垂直建築線與側向透視構成深度；前景臉部清楚，背景以概括細節交代世界。",
+      "distinction": "14 的科幻感由日常街景中的少量奇異設計產生，畫法較平實鬆弛；15、16 的透視和表情則更誇張。",
+      "anchors": "略有手感的墨線、柔和不透明套色、少量硬邊陰影、可信街景透視、淡淡復古印刷感。",
+      "variable": "科幻裝備、站牌、街道及雙人配置可替換；原圖手寫標題不屬必需風格元素。",
+      "zh": "柔彩復古都市漫畫插畫，略帶手繪不規則感的黑色墨線，奶油黃、灰紫、薄荷綠與少量桃紅平塗，少量硬邊陰影，清楚但不過度精密的建築透視，日常生活細節中加入簡潔奇異設計，細微紙感與套色感，氣氛輕鬆、古怪而有生活感。",
+      "en": "Soft-color retro urban comic illustration with slightly irregular hand-inked black contours. Opaque cream yellow, dusty lavender, mint green and sparse hot-pink accents, restrained hard-edged shadows, and clear but lightly simplified architectural perspective. Everyday details mix with concise odd inventions, subtle paper and print character, and a relaxed, eccentric lived-in mood.",
+      "avoid": "避免過密高科技面板、寫實攝影背景、重度霓虹泛光；生成分鏡時不加入無意義大標題。",
+      "avoidEn": "Avoid dense technological panels, photographic backgrounds, heavy neon bloom, and unsolicited large lettering.",
+      "motion": "適合城市漫遊、人物對話、小道具互動、日常科幻短故事。",
+      "risk": "招牌文字與街景線條可能跳動；需要可讀文字時可後製排版，先固定主要建築與道具輪廓。"
+    },
+    {
+      "id": "15",
+      "family": "J",
+      "name": "冷色怪誕透視漫畫",
+      "palette": [
+        "奶白",
+        "薄荷青",
+        "灰藍紫",
+        "少量洋紅"
+      ],
+      "colors": [
+        "#f2efdb",
+        "#b6ddd2",
+        "#58668e",
+        "#a42b68"
+      ],
+      "observation": "尖髮角色戴護目鏡，穿白色外衣，手套與細長工具被大幅透視放大。嘴形、牙齒及縫線裝飾帶怪誕感；冷色陰影、少量色邊及文字裝飾加強圖像刺激。",
+      "composition": "近距離廣角般誇張透視，前景手掌與工具直逼觀者；背景建築斜線強化鏡頭傾斜。",
+      "distinction": "與 16 共有尖髮、大表情與前景手勢；15 配色較冷淡，場景可辨，怪誕職業造型更突出。",
+      "anchors": "俐落墨線、奶白與冷灰藍紫、薄荷陰影、硬邊賽璐璐、尖銳輪廓、大表情、透視張力。",
+      "variable": "護目鏡、醫療服裝、工具、縫線和尖牙皆可替換；保留誇張造型與鏡頭張力。",
+      "zh": "帶怪誕幽默的動感漫畫插畫，俐落深色墨線與硬邊賽璐璐陰影，奶白、薄荷青與灰藍紫為主，少量洋紅點綴，尖銳剪影、誇張表情與概括形體，選擇性使用輕微色邊，視覺充滿近距離透視張力，保持角色和道具可辨。",
+      "en": "Dynamic comic illustration with mischievous uncanny humor, crisp dark ink contours and hard-edged cel shading. Cream white, mint cyan and gray-blue violet dominate with sparse magenta accents. Angular silhouettes, exaggerated expressions, simplified forms and selective subtle color fringing create punchy close-range perspective energy while keeping characters and props readable.",
+      "avoid": "避免真實血腥質感、滿版模糊、失控魚眼畸變與每條邊都加粗重色差。",
+      "avoidEn": "Avoid photorealistic gore, all-over blur, uncontrolled fisheye distortion, and heavy color fringing on every edge.",
+      "motion": "適合怪誕喜劇角色出場、道具展示、快速靠近鏡頭與誇張反應。",
+      "risk": "手指透視、工具與護目鏡反光容易變形；動作可拆成遠處展示、接近、停格三段。"
+    },
+    {
+      "id": "16",
+      "family": "J",
+      "name": "高彩派對流行漫畫",
+      "palette": [
+        "電藍",
+        "青綠",
+        "亮粉",
+        "純黑"
+      ],
+      "colors": [
+        "#1460a2",
+        "#1597a2",
+        "#f48bad",
+        "#111d1b"
+      ],
+      "observation": "角色穿藍色西裝，雙手戴白手套向前伸出，尖髮外緣有青綠亮色，大張嘴與尖牙構成戲劇表情。背景的愛心、星光和彩色曲線像貼紙圖形，黑色面積也很強。",
+      "composition": "直幅近景，兩隻放大的前景手掌圍住臉部；大量弧線與貼紙形狀從邊緣填入。",
+      "distinction": "比 15 更飽和、更平面、更像派對或音樂視覺；比 07 更強調尖銳形狀、黑色重量與挑釁表情。",
+      "anchors": "電藍青綠亮粉、強黑白對比、銳利輪廓、硬邊陰影、誇張表情、貼紙般圖形與節奏。",
+      "variable": "愛心、尖牙、手套、西裝與尖髮可替換；前景雙手屬特定鏡頭選項。",
+      "zh": "高彩度流行漫畫插畫，電藍、青綠、亮粉與強烈黑白對比，銳利深色輪廓，乾淨平塗及兩到三階硬邊陰影，尖銳而有彈性的造型，誇張表情，貼紙般的圖形點綴與彩色弧線，畫面節奏強烈，帶玩心、舞台感與張揚能量。",
+      "en": "High-saturation pop-comic illustration in electric blue, teal and bright pink with strong black-white contrast. Sharp dark contours, clean flat fills and two or three hard-edged cel-shadow levels, angular yet elastic forms and exaggerated expressions. Sticker-like graphic accents and colorful arcs create a playful, theatrical, high-energy rhythm.",
+      "avoid": "避免粉彩化所有顏色、柔焦厚塗、亮片遮臉與把畫面塞到沒有辨識空間。",
+      "avoidEn": "Avoid turning the whole palette pastel, softly blurred painting, sparkles covering faces, and clutter destroying readability.",
+      "motion": "適合節拍短片、角色表演、手勢挑戰、快速推近、貼紙圖形轉場。",
+      "risk": "近景雙手遮臉及高密圖形容易搶焦；固定臉部輪廓，背景貼紙可分層後製。"
+    }
+  ]
+}

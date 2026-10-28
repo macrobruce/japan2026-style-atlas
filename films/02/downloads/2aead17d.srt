@@ -1,0 +1,39 @@
+1
+00:00:05,000 --> 00:00:10,000
+Rain is coming. Let's go home.
+
+2
+00:00:10,000 --> 00:00:15,000
+Your steps have grown slower.
+
+3
+00:00:15,000 --> 00:00:20,000
+I'll stop and wait for you.
+
+4
+00:00:20,000 --> 00:00:25,000
+I kneel to see your world.
+
+5
+00:00:25,000 --> 00:00:30,000
+There we are, together.
+
+6
+00:00:30,000 --> 00:00:35,000
+You want to linger, too.
+
+7
+00:00:35,000 --> 00:00:40,000
+More shelter, just for you.
+
+8
+00:00:40,000 --> 00:00:45,000
+There's no need to hurry home.
+
+9
+00:00:45,000 --> 00:00:50,000
+That light is waiting for us.
+
+10
+00:00:50,000 --> 00:00:55,000
+Home is having you beside me.

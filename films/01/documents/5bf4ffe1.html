@@ -1,0 +1,638 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>完整製作規格</title><style>body{max-width:1050px;margin:0 auto;padding:28px 22px;background:#f6f3ed;color:#202a2c;
+font:16px/1.85 system-ui,sans-serif;overflow-wrap:anywhere}a{color:#245a5f}img{max-width:100%;height:auto}
+nav{margin-bottom:24px}table{border-collapse:collapse;display:block;overflow:auto}td,th{border:1px solid #ccd3ce;padding:8px 12px}
+pre{white-space:pre-wrap;background:#fff;padding:18px;border:1px solid #d7d9d2;border-radius:7px}
+h1,h2,h3{line-height:1.45}code{font-size:.9em}blockquote{border-left:3px solid #a9c3bf;margin-left:0;padding-left:18px}</style></head><body><nav><a href="../index.html">← 返回圖文總覽</a></nav><h1>01｜晚霞的方向 — 完整製作規格</h1>
+<p>更新日期：2026-10-23<br />
+已確認：依十案原順序，先製作方案 01。全片 60 秒＝片頭 5 秒＋10 鏡 × 5 秒＋片尾 5 秒。<br />
+本輪完成：故事與雙語文字、3 張角色設定／比例圖、2 張海報、10 張分鏡、10 組雙語圖像提示詞、12 組雙語影片提示詞、中英文字幕檔。影片部分交付生成提示詞，動態影片與剪輯成片尚未生成。</p>
+<p><a href="../index.html">圖像總覽</a>｜<a >分鏡與提示詞 JSON</a>｜<a >片頭片尾提示詞 JSON</a>｜<a >資產清單</a>｜<a href="downloads/337adbc8.srt">中文字幕</a>｜<a href="downloads/2aead17d.srt">英文字幕</a>｜<a >十部製作進度</a></p>
+<h2>一、確認方案</h2>
+<ol>
+<li><strong>風格與主題</strong>：S11｜鈷藍朱紅極簡平塗，A 家族。尋路冒險、傾聽與歸屬。利用大色塊、負空間與清楚剪影表現方向感；紅色由晚霞、圍巾到歸途標記，形成情緒線索。</li>
+<li><strong>角色</strong>：青年屋頂巡守員阿澄（Cheng）與燕子小翎（Ling）。兩位主角，不增加其他人物或動物。</li>
+<li><strong>劇情大綱</strong>：阿澄在海邊屋頂遇到遲遲未歸的小翎，試著帶牠尋家。迎風前進的路卻被高牆阻擋。他停下來，才注意到小翎一直望著遠處一抹紅光。順著牠的目光，兩人抵達被夕照染紅的屋簷。小翎回巢後，阿澄將紅圍巾繫在支柱上，留下一個醒目的歸途標記，安心道別。</li>
+<li><strong>劇情要點</strong>：主動帶路 → 逆風受阻 → 停下傾聽 → 跟隨燕子的視線 → 一同找到巢 → 留下紅色路標。60 秒版本將原企劃的「反覆走錯」凝聚為一次可清楚閱讀的受阻，保留情感轉折。</li>
+<li><strong>場景</strong>：同一海邊屋頂聚落，包括藍白屋頂、細窄有護欄的天橋、連接階梯與夕照屋簷。回巢小屋固定使用鈷藍牆、米白拱窗、深色斜屋簷與右端支柱；半杯形泥巢位於支柱左上方的屋簷下。</li>
+</ol>
+<p>情緒：好奇與急切 → 小挫折 → 安靜觀察 → 希望 → 安心。以動作敘事，不依賴對白。</p>
+<h2>二、風格與文字定稿</h2>
+<p>S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。</p>
+<p>Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.</p>
+<p>參考：<a >原始 S11 圖片</a>、<a >風格分析</a>、<a >風格提示詞庫</a>。參考色彩、線條及構圖語彙，角色與故事採本片原創設定。</p>
+<table>
+<thead>
+<tr>
+<th>欄位</th>
+<th>中文</th>
+<th>English</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>大標題</td>
+<td>晚霞的方向</td>
+<td>Where Dusk Leads</td>
+</tr>
+<tr>
+<td>副標題</td>
+<td>慢下來，才看見歸途。</td>
+<td>Slow down. See the way home.</td>
+</tr>
+</tbody>
+</table>
+<p>中英標題採語意與意象對應。英文副標題使用兩個簡短祈使句，呼應停步後看見歸途。兩張海報的四段文字完全相同。分鏡圖本身無文字，字幕另於後製加入。</p>
+<h2>三、角色設定與一致性</h2>
+<p>嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。</p>
+<p>Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.</p>
+<p>阿澄為約七頭身青年。外套兩個簡單胸前貼袋，圍巾為無圖案紅色；佩戴時短端在胸前，長端從右肩後方垂出。小翎的叉尾是辨識重點，雙尾尖須完整，不變成扇形尾。兩位角色的視覺比例以共同體型圖為準；上述公分值是本片設計標尺，遠近景仍須服從透視。</p>
+<table>
+<thead>
+<tr>
+<th>圖片</th>
+<th>用途</th>
+<th>視角／條件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../assets/character_cheng.webp">阿澄四視角</a></td>
+<td>人物身形、髮型、衣著</td>
+<td>正面、45 度側面、側面、背面，四個全身像</td>
+</tr>
+<tr>
+<td><a href="../assets/character_ling.webp">小翎四視角</a></td>
+<td>燕子斑紋、喙、雙叉尾</td>
+<td>正面、45 度側面、側面、背面，四個全身像</td>
+</tr>
+<tr>
+<td><a href="../assets/character_scale.webp">共同體型比例</a></td>
+<td>同景深相對大小</td>
+<td>同一地面基準，一人一鳥，不將兩者等高排版</td>
+</tr>
+</tbody>
+</table>
+<p>三張均為白色背景、均勻光線、橫式 16:9 構圖。提示詞提及參考檔名時，必須實際附上對應圖片；單寫檔名不等於已載入參考。角色設定圖優先控制外觀，共同比例圖控制大小，對應分鏡圖控制影片首幀。</p>
+<h3>圍巾與場景連續性</h3>
+<ul>
+<li>片頭、01–08：唯一紅圍巾戴在阿澄頸部；05 只拍小翎，不加入青年。</li>
+<li>09：圍巾已取下，雙手正在繫上右端支柱；頸部裸露米白領口，不另生第二條圍巾。</li>
+<li>10、片尾：唯一紅圍巾留在支柱，阿澄頸部無圍巾。結低於巢口，布尾不遮住燕子。</li>
+<li>小翎在 08 回巢，09、10、片尾維持在巢邊。沒有蛋、雛鳥或新增配角。</li>
+<li>屋簷、拱窗、泥巢與支柱以 <a href="../assets/shot_08.webp">08 場景圖</a> 作為回巢段環境參考。鏡位改變時保留空間關係。</li>
+<li>相同傍晚、海風與晚霞色調；影片以各自首幀的受光為準，鏡內不得改變日照方向。</li>
+</ul>
+<h2>四、60 秒剪輯時間軸</h2>
+<p>時間採整片計時，結束時間為下一段起點。每段正好 5 秒，不在段落外追加轉場時間。</p>
+<table>
+<thead>
+<tr>
+<th>段落</th>
+<th>整片時間</th>
+<th>景別</th>
+<th>小標題</th>
+<th>中文字幕</th>
+<th>English caption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>片頭</td>
+<td>00:00–00:05</td>
+<td>海報微動</td>
+<td>晚霞的方向</td>
+<td>海報原有標題／副標題</td>
+<td>Original poster typography</td>
+</tr>
+<tr>
+<td>01</td>
+<td>00:05–00:10</td>
+<td>遠景</td>
+<td>暮色相遇 / Meeting at Dusk</td>
+<td>天色漸晚你往哪裡</td>
+<td>Where will you go at dusk?</td>
+</tr>
+<tr>
+<td>02</td>
+<td>00:10–00:15</td>
+<td>中景</td>
+<td>踏風尋路 / Searching in the Wind</td>
+<td>我想替你找到家</td>
+<td>Let me help you home.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>00:15–00:20</td>
+<td>全景</td>
+<td>逆風受阻 / A Way Blocked</td>
+<td>風卻吹亂了方向</td>
+<td>The wind turns us around.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>00:20–00:25</td>
+<td>近景</td>
+<td>為你停步 / A Moment to Listen</td>
+<td>那就陪你停一下</td>
+<td>Then let's pause together.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>00:25–00:30</td>
+<td>特寫</td>
+<td>目光所向 / Following Its Gaze</td>
+<td>原來你一直記得</td>
+<td>You remembered all along.</td>
+</tr>
+<tr>
+<td>06</td>
+<td>00:30–00:35</td>
+<td>越肩中景</td>
+<td>抬頭見光 / A Glimpse of Home</td>
+<td>那抹紅還在等你</td>
+<td>That red glow waits for you.</td>
+</tr>
+<tr>
+<td>07</td>
+<td>00:35–00:40</td>
+<td>遠景</td>
+<td>循光同行 / Following the Glow</td>
+<td>這次換我跟著你</td>
+<td>This time, I'll follow you.</td>
+</tr>
+<tr>
+<td>08</td>
+<td>00:40–00:45</td>
+<td>中近景</td>
+<td>終於到家 / Home at Last</td>
+<td>小小屋簷接住你</td>
+<td>These eaves welcome you home.</td>
+</tr>
+<tr>
+<td>09</td>
+<td>00:45–00:50</td>
+<td>中近景（手部動作）</td>
+<td>繫住歸途 / A Sign for Home</td>
+<td>留一抹紅等你回</td>
+<td>A little red to guide you.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>00:50–00:55</td>
+<td>遠景</td>
+<td>安心告別 / A Peaceful Goodbye</td>
+<td>你有歸處我便安心</td>
+<td>You're home. My heart rests.</td>
+</tr>
+<tr>
+<td>片尾</td>
+<td>00:55–01:00</td>
+<td>海報微動</td>
+<td>晚霞的方向</td>
+<td>海報原有標題／副標題</td>
+<td>Original poster typography</td>
+</tr>
+</tbody>
+</table>
+<p>中文字幕逐段為 8、7、7、7、7、7、7、7、7、8 字，小標題均為 4 字；英文保持短句及自然語法。中文省略標點讓畫面更簡潔。中英文字幕分成兩個 SRT 檔，可選擇單語版本，或後製時組合為雙語。</p>
+<h2>五、十段分鏡與中英文生成提示詞</h2>
+<p>每組圖像提示詞對應一張獨立直式圖片；影片提示詞對應其 5 秒動態版本。中、英文是可替換的對照版本，一次選用其中一種即可。所有提示詞以本片定稿角色和畫面狀態為準。</p>
+<h3>01｜暮色相遇 / Meeting at Dusk</h3>
+<p><strong>遠景 / Wide shot｜00:05–00:10｜5 秒</strong></p>
+<p>鈷藍海邊屋頂連成層層剪影。阿澄停在左側平台，注意到右側矮牆上獨自停留的小翎；遠處留有一線朱紅晚霞。</p>
+<p>Cobalt seaside rooftops form layered silhouettes. Cheng pauses on the left platform, noticing Ling alone on the low wall to the right. A thin vermilion band of dusk remains on the horizon.</p>
+<p><strong>Video Caption</strong>：天色漸晚你往哪裡 / Where will you go at dusk?</p>
+<p><a href="../assets/shot_01.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式遠景，阿澄全身位於左下三分之一，小翎停在同一平台右側矮牆上，雙方相距約一公尺。屋頂有簡單黑色欄杆與藍瓦，天空占上半部，海面只用一條米白水平色帶表示。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical wide shot. Full-body Cheng stands in the lower-left third and tiny Ling perches on a low wall on the same platform to the right, about one meter away. Simple dark rooftop railings and blue tiles; the sky fills the upper half and the sea is suggested by a thin ivory horizontal band.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，鏡頭極慢推近。阿澄將目光轉向右側小翎，小翎微微抬頭；紅圍巾末端被同一方向的微風吹向畫面左側。保持腳步與屋頂結構穩定。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, very slow camera push-in. Cheng turns his gaze toward Ling on the right; Ling lifts its head slightly. The end of the red scarf drifts gently toward screen-left in a consistent breeze. Keep feet and rooftop geometry stable.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>02｜踏風尋路 / Searching in the Wind</h3>
+<p><strong>中景 / Medium shot｜00:10–00:15｜5 秒</strong></p>
+<p>阿澄朝右側的屋頂通道前進，左前臂托在胸前，小翎停在他的左腕附近。他的表情專注，紅圍巾在身後拉出動線。</p>
+<p>Cheng moves toward the rooftop passage on the right, his left forearm raised across his chest with Ling perched near his wrist. His expression is intent, and the scarf trails behind him.</p>
+<p><strong>Video Caption</strong>：我想替你找到家 / Let me help you home.</p>
+<p><a href="../assets/shot_02.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。腰部以上側面中景，阿澄面向畫面右側，左前臂水平抬起，小型燕子雙腳抓住袖口附近，鳥的身長不超過青年一隻手的長度。背景為簡化的相連藍色屋頂。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Waist-up side medium shot. Cheng faces screen-right with his left forearm held horizontally; tiny Ling grips the cuff area with both feet. The bird's total length is no more than about one human hand length. Simplified connected blue rooftops form the background.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，鏡頭小幅向右平移跟隨阿澄一個緩慢步伐；他保持左前臂平穩，小翎站穩並輕轉頭。紅圍巾保持一條，不穿過手臂或鳥身。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, a small rightward tracking move follows one slow step by Cheng. His left forearm remains steady as Ling stays perched and turns its head slightly. Keep a single scarf, with no intersections through his arm or the bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>03｜逆風受阻 / A Way Blocked</h3>
+<p><strong>全景 / Full shot｜00:15–00:20｜5 秒</strong></p>
+<p>狹窄天橋通向一面封閉藍牆。阿澄在橋上停步，才發現走錯方向；小翎仍停在左腕，圍巾被風吹向來路。</p>
+<p>The narrow bridge ends at a solid blue wall. Cheng stops on the bridge, realizing he has taken the wrong way. Ling remains on his left wrist as the scarf streams back toward their starting point.</p>
+<p><strong>Video Caption</strong>：風卻吹亂了方向 / The wind turns us around.</p>
+<p><a href="../assets/shot_03.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式全景，帶欄杆的窄天橋從左下向右上延伸，盡頭是清楚可見的完整高牆，沒有門洞。阿澄全身停在牆前，左腕的小翎維持真實小型比例。朱紅圍巾向左飄起，保持站姿安全穩定。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical full shot. A narrow railed bridge leads from lower-left to upper-right and ends at an unmistakable solid tall wall with no doorway. Full-body Cheng stops before it, tiny Ling still on his left wrist. His vermilion scarf streams toward screen-left; his stance is steady.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，固定鏡頭。阿澄完成停步，肩膀略微落下；一陣短風掀起圍巾後減弱，小翎收緊站姿。人物不轉身跳躍，欄杆和牆面不變形。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, locked camera. Cheng finishes stopping and lowers his shoulders slightly. A brief gust lifts the scarf, then eases; Ling steadies its perch. No jump or full turn, and no deformation of rails or wall.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>04｜為你停步 / A Moment to Listen</h3>
+<p><strong>近景 / Close shot｜00:20–00:25｜5 秒</strong></p>
+<p>回到天橋旁的平台，阿澄蹲下，與停在欄杆上的小翎接近同一視線高度。他不再指路，只安靜看著牠。</p>
+<p>On the platform beside the bridge, Cheng crouches until his gaze is close to Ling's height on the railing. He stops directing and simply watches the bird.</p>
+<p><strong>Video Caption</strong>：那就陪你停一下 / Then let's pause together.</p>
+<p><a href="../assets/shot_04.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。肩部以上近景，青年臉在左側三分之一，小翎在右側欄杆上，鳥與臉分開且保持小型比例。青年略微低頭、放鬆眉眼，空白藍色背景突出兩者之間的空間。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Shoulder-up close shot. Cheng's face occupies the left third, with tiny Ling on the railing to the right, separated from his face and retaining small-bird scale. He inclines his head with softened brows. An uncluttered blue background emphasizes the space between them.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，固定鏡頭。阿澄慢慢放鬆眉眼，頭部微微傾斜；小翎輕轉頭看向右方。只保留一次眨眼與少量髮尾、圍巾末端微動。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, locked camera. Cheng gradually softens his expression and tilts his head slightly; Ling turns its gaze toward the right. Allow one blink and minimal movement in hair tips and scarf ends.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>05｜目光所向 / Following Its Gaze</h3>
+<p><strong>特寫 / Detail close-up｜00:25–00:30｜5 秒</strong></p>
+<p>小翎站在深色欄杆上，側臉朝右；牠的眼睛映著一點暖紅。背景遠處，一小片受夕光照亮的簷口提供線索。</p>
+<p>Ling stands on the dark railing in right-facing profile, a tiny warm-red glint in its eye. A small sunlit eave in the distant background offers a clue.</p>
+<p><strong>Video Caption</strong>：原來你一直記得 / You remembered all along.</p>
+<p><a href="../assets/shot_05.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。單獨燕子的近距離側面特寫，全身與兩條叉尾都在畫內，站在深色欄杆上朝右。這是鏡頭接近，不是鳥體型變大。遠景只保留少量藍色幾何屋頂與一小片朱紅簷口，不出現青年或其他鳥。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+角色出場：只有小翎；不添加青年、圍巾或其他鳥。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Close profile portrait of Ling alone, its entire body and both forked tail streamers visible on a dark railing, facing right. The camera is closer; the bird has not grown. In the distance retain only a few blue geometric roof shapes and a small vermilion sunlit eave. No human or other bird.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Only Ling appears. Do not add Cheng, any scarf, or other birds.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，極緩推近。小翎保持雙腳抓住欄杆，只將頭向右再轉一點；眼部紅色反光保持很小。翅膀維持收攏，不新增羽毛或尾羽。
+角色出場：只有小翎；不添加青年、圍巾或其他鳥。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, an extremely gentle push-in. Ling keeps both feet on the railing and turns its head a little farther right. The red eye reflection stays tiny. Wings remain folded; do not add feathers or tail streamers.
+Only Ling appears. Do not add Cheng, any scarf, or other birds.
+</code></pre>
+<h3>06｜抬頭見光 / A Glimpse of Home</h3>
+<p><strong>越肩中景 / Over-the-shoulder shot｜00:30–00:35｜5 秒</strong></p>
+<p>從阿澄左肩後方看出去，他順著小翎的目光抬頭。屋頂盡頭，一棟有米白拱窗的小屋，其右側屋簷被晚霞染紅。</p>
+<p>Seen over Cheng's left shoulder, he looks up along Ling's line of sight. Beyond the rooftops, dusk colors the right eave of a small house with an ivory arched window.</p>
+<p><strong>Video Caption</strong>：那抹紅還在等你 / That red glow waits for you.</p>
+<p><a href="../assets/shot_06.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。青年後腦與左肩在左下前景，紅圍巾仍在頸上；小翎停在右下近處欄杆。畫面右上遠處是固定目的地：鈷藍小屋、米白拱窗、墨黑斜屋簷，簷口受朱紅夕光照亮，屋簷右端有深色支柱。距離使巢暫不可辨。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. The back of Cheng's head and left shoulder fill the lower-left foreground, red scarf still around his neck. Ling perches on the nearby lower-right railing. The fixed destination sits in the distant upper-right: a cobalt cottage, ivory arched window, ink-black sloping eave, vermilion sunset along the eave edge, and a dark post at its right end. The nest is not yet distinguishable at this distance.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，鏡頭緩慢上仰少量，順著青年視線揭示遠處紅色簷口。青年只抬頭，小翎保持停棲；建築位置、光線方向和透視固定。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, a slight slow upward camera tilt follows Cheng's gaze and reveals the distant red-lit eave. Cheng only raises his head while Ling remains perched. Keep building positions, light direction and perspective consistent.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>07｜循光同行 / Following the Glow</h3>
+<p><strong>遠景 / Wide shot｜00:35–00:40｜5 秒</strong></p>
+<p>小翎在前方低飛，阿澄沿相連的屋頂步道跟隨。兩人朝右側的小屋前進，速度比先前從容。</p>
+<p>Ling flies low ahead while Cheng follows the connected rooftop walkway. They move toward the cottage on the right, more calmly than before.</p>
+<p><strong>Video Caption</strong>：這次換我跟著你 / This time, I'll follow you.</p>
+<p><a href="../assets/shot_07.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式高位遠景，青年全身從畫面左下沿有欄杆的步道走向右上。小翎在他前方約一公尺處低飛，兩翅與叉尾輪廓清楚但尺寸很小。固定的藍色拱窗小屋與紅亮簷口在右上，天空保留乾淨負空間。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical elevated wide shot. Full-body Cheng follows a railed path from lower-left toward upper-right. Ling flies low about one meter ahead, with two clear wings and a forked tail, but remains tiny. The established blue cottage with its arched window and red-lit eave sits upper-right. Keep clean negative space in the sky.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，鏡頭緩緩向右跟移。小翎低速向右飛行，只完成一到兩次完整振翅；阿澄跟隨走兩個短步，圍巾向左飄。主角距離和大小保持連續。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, a gentle rightward tracking move. Ling flies slowly right with only one or two complete wingbeats. Cheng follows with two short steps, his scarf trailing left. Preserve relative distance and scale.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>08｜終於到家 / Home at Last</h3>
+<p><strong>中近景 / Medium close-up｜00:40–00:45｜5 秒</strong></p>
+<p>在同一棟藍色小屋前，小翎落到屋簷下的泥巢邊緣。阿澄站在左側看著牠，表情終於鬆開。</p>
+<p>At the same blue cottage, Ling lands on the rim of a mud nest beneath the eave. Cheng watches from the left, relief softening his face.</p>
+<p><strong>Video Caption</strong>：小小屋簷接住你 / These eaves welcome you home.</p>
+<p><a href="../assets/shot_08.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式中近景，青年上半身在左側，頸上仍有唯一紅圍巾；右上屋簷下有一個小型半杯狀泥巢，小翎停在巢沿。墨黑斜簷、右端深色直柱、左後方米白拱窗和鈷藍牆面清楚可辨。巢內沒有蛋、雛鳥或其他角色。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical medium close-up. Cheng's upper body appears on the left, still wearing his single red scarf. A small half-cup mud nest beneath the upper-right eave holds Ling perched on its rim. Clearly establish the ink-black sloping eave, dark right-hand support post, ivory arched window behind the left side and cobalt wall. No eggs, chicks or additional characters.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，固定鏡頭。以小翎已接觸巢沿為起點，牠收攏翅膀並站穩；阿澄露出輕微微笑。巢、簷口與支柱固定，夕光保持柔和。
+圍巾狀態：唯一一條朱紅圍巾戴在青年頸上，短端落於胸前、長端從右肩後方垂下；支柱上不出現另一條圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, locked camera. Begin with Ling already touching the nest rim; it folds its wings and settles. Cheng forms a slight smile. Keep the nest, eave and post fixed and the sunset light gentle.
+Scarf state: the ONE vermilion scarf is worn around Cheng's neck, with a short end at the chest and a long end from behind his right shoulder. No second scarf on any post.
+</code></pre>
+<h3>09｜繫住歸途 / A Sign for Home</h3>
+<p><strong>中近景（手部動作） / Medium close-up (hands)｜00:45–00:50｜5 秒</strong></p>
+<p>阿澄已取下圍巾，將它繫在屋簷右端支柱的較低位置。小翎留在上方巢邊，紅色布尾成為從遠處就能看見的標記。</p>
+<p>Cheng has removed his scarf and ties it lower on the post at the right end of the eave. Ling stays by the nest above, while the red fabric becomes a marker visible from afar.</p>
+<p><strong>Video Caption</strong>：留一抹紅等你回 / A little red to guide you.</p>
+<p><a href="../assets/shot_09.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式中近景，青年位於左側，保留臉部、上半身及兩隻手。他正把唯一一條紅圍巾繫在右側深色支柱上；米白領口及沒有圍巾的頸部清楚可見。背景上方保留同一泥巢及小翎，結的位置低於巢，布尾不遮擋巢口。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：青年已取下唯一一條紅圍巾，正把它繫上支柱；頸部沒有圍巾，禁止複製第二條紅布。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical medium close-up. Cheng is on the left, with his face, upper body and both hands visible. He ties his ONE red scarf around the dark post on the right; his ivory collar and bare neck are clearly visible. The same nest and tiny Ling remain above in the background; the knot is lower than the nest and the tails do not block its entrance.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: Cheng has removed his ONE red scarf and is tying it to the post. His neck has NO scarf. Do not duplicate the red fabric.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，固定鏡頭。由圍巾已環繞支柱且單結成形開始，阿澄雙手輕拉兩端讓結固定，再鬆開手指；布尾微微向左飄，小翎保持巢邊停棲。不得在頸部再生圍巾。
+圍巾狀態：青年已取下唯一一條紅圍巾，正把它繫上支柱；頸部沒有圍巾，禁止複製第二條紅布。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, locked camera. Start with the scarf already around the post and a single knot formed. Cheng gently pulls the two ends to secure it, then relaxes his fingers. The tails drift slightly left; Ling stays at the nest. Never regenerate a scarf around Cheng's neck.
+Scarf state: Cheng has removed his ONE red scarf and is tying it to the post. His neck has NO scarf. Do not duplicate the red fabric.
+</code></pre>
+<h3>10｜安心告別 / A Peaceful Goodbye</h3>
+<p><strong>遠景 / Wide shot｜00:50–00:55｜5 秒</strong></p>
+<p>阿澄離開小屋幾步後回望，向巢邊的小翎揮手。紅圍巾留在支柱上，晚霞與海面在屋頂後方展開。</p>
+<p>A few steps from the cottage, Cheng looks back and waves to Ling at the nest. His red scarf remains on the post as dusk and the sea open beyond the rooftops.</p>
+<p><strong>Video Caption</strong>：你有歸處我便安心 / You're home. My heart rests.</p>
+<p><a href="../assets/shot_10.webp">查看定稿分鏡</a></p>
+<p><strong>AI 圖像提示詞｜中文｜9:16</strong></p>
+<pre><code class="language-text">用途：原創動畫分鏡單張圖片。直式 9:16，單一完整畫面，不製作拼圖或多格漫畫。直式遠景，青年全身在左下，身體準備離開但轉頭向右上微笑，舉一隻手告別；頸部只見米白上衣，沒有紅圍巾。右上同一藍色拱窗小屋、墨黑簷口、泥巢與小翎保持一致；唯一紅圍巾繫在右端支柱的巢下位置。天空和海面開闊明亮。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+圍巾狀態：唯一紅圍巾已繫於屋簷右端支柱，青年頸部完全沒有圍巾。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+同一個海邊屋頂聚落與傍晚時段，夕光自畫面右側照入，風向以畫面左側為主。只畫本鏡頭指定角色。所有文字與字幕留待後製，本圖無字、無標誌、無浮水印。
+</code></pre>
+<p><strong>AI image prompt｜English｜9:16</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE original animation storyboard still, vertical 9:16, one full frame, no collage or panels. Vertical wide shot. Full-body Cheng stands lower-left, body ready to leave but head turned toward the upper-right with a smile, one hand raised in farewell. His ivory shirt collar is visible and there is no scarf on his neck. The same blue arched-window cottage, dark eave, mud nest and Ling remain upper-right. The only red scarf is tied below the nest on the right-end post. Keep the sky and sea open and hopeful.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Scarf state: the ONE red scarf is already tied to the right-end eave post. Cheng has NO scarf around his neck.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Same seaside rooftop neighborhood and dusk period; sunset enters from screen-right, with the breeze generally toward screen-left. Only include characters specified for this shot. Absolutely NO text, subtitles, lettering, logos or watermark.
+</code></pre>
+<p><strong>AI 影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16、總長正好 5 秒，以對應分鏡圖為首幀。單一連續鏡頭，無剪接。保持角色設定圖中的身形、服裝、鳥類斑紋、叉尾及相對比例，維持平塗色面與硬邊陰影；不新增角色、文字、標誌或浮水印。影片字幕在後製加入。
+5 秒，鏡頭極慢後退。阿澄朝小翎輕揮一次手後停住，小翎在巢沿抬頭回應；紅圍巾在支柱上微動。結尾保持安穩構圖，不讓燕子離巢或青年突然轉身消失。
+圍巾狀態：唯一紅圍巾已繫於屋簷右端支柱，青年頸部完全沒有圍巾。
+</code></pre>
+<p><strong>AI video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical 9:16, exactly 5 seconds, use the corresponding storyboard image as the first frame. One continuous shot, no cuts. Preserve reference identity, clothing, swallow markings, forked tail and relative scale, with stable flat color planes and hard-edged shadows. Add no characters, text, logos or watermarks; captions will be added in editing.
+5 seconds, very slow camera pullback. Cheng gives one small wave and holds; Ling lifts its head in response on the nest rim. The red scarf moves gently on the post. End on a calm held composition, without the bird leaving or Cheng abruptly turning away.
+Scarf state: the ONE red scarf is already tied to the right-end eave post. Cheng has NO scarf around his neck.
+</code></pre>
+<h2>六、片頭與片尾海報及各 5 秒影片提示詞</h2>
+<p>2026-10-23 改版：片頭、片尾採獨立視點與前導／後記場景，不能僅用正片第 01／10 鏡加字。兩張海報仍使用相同四段中英文標題及副標題，各 5 秒，全片維持 60 秒。</p>
+<h3>片頭｜00:00–00:05｜相遇前的屋頂俯瞰</h3>
+<p>高角度俯瞰海邊藍白屋頂與迂迴階梯。小翎停在畫面右側近處高欄杆；阿澄在下方較遠的階梯轉角，紅圍巾仍戴在頸部，兩者尚未對視。海岸及朱紅晚霞延伸遠方。以屋頂幾何與大小景深建立新構圖，阿澄不作站在左側矮牆邊的正面全身像。</p>
+<p><strong>狀態連續性</strong>：前導畫面；紅圍巾仍在青年頸部。近鳥遠人以透視造成表觀大小差，不是巨鳥。</p>
+<p><a href="../assets/poster_opening.webp">查看新版片頭海報</a></p>
+<p><strong>海報圖像提示詞｜中文</strong></p>
+<pre><code class="language-text">用途：原創動畫片頭海報，直式 9:16，獨立新構圖。高角度俯瞰海邊藍白屋頂與迂迴階梯。小翎停在畫面右側近處高欄杆；阿澄在下方較遠的階梯轉角，紅圍巾仍戴在頸部，兩者尚未對視。海岸及朱紅晚霞延伸遠方。以屋頂幾何與大小景深建立新構圖，阿澄不作站在左側矮牆邊的正面全身像。
+前導畫面；紅圍巾仍在青年頸部。近鳥遠人以透視造成表觀大小差，不是巨鳥。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+角色設定圖僅作身份與比例參考；分鏡圖僅作環境、服裝、光色參考，禁止複製分鏡 01／10 的構圖、姿勢再加字。
+只加入四段文字：『晚霞的方向』『Where Dusk Leads』『慢下來，才看見歸途。』『Slow down. See the way home.』，繁體中文字形正確，標點完整，清晰排版，避開角色。沒有其他文字、署名、商標或浮水印。
+</code></pre>
+<p><strong>Poster image prompt｜English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE vertical9:16 original opening poster with a genuinely NEW camera position, staging and story moment. A fresh HIGH OBLIQUE BIRD'S-EYE establishing composition over a cobalt-and-ivory seaside rooftop maze and winding stair landings. Ling perches on a HIGH RAIL in the near RIGHT foreground, seen from behind three-quarter with pointed forked tail visible. Cheng is SMALL in the distant LOWER-LEFT stair turn, just arriving on patrol, red scarf still around his neck. They have NOT met or made eye contact yet. Coast and a vermilion dusk band far beyond. Strong depth and diagonal rooftop geometry. Do NOT place a large frontal standing man at left facing a bird on a low wall. Human is a small figure occupying under18% of frame height, not the dominant foreground subject.
+Prologue: the ONE scarf is still worn around Cheng's neck. A closer bird and distant man have different apparent sizes because of depth, not a giant bird.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Input character sheets are ONLY for identity/proportions; environment still ONLY for architecture/style/color. Do NOT reproduce an existing shot01/shot10 composition with typography added. Render a fresh single scene, no collage or repeated characters. Render EXACTLY FOUR text blocks: &quot;晚霞的方向&quot; / &quot;Where Dusk Leads&quot; / &quot;慢下來，才看見歸途。&quot; / &quot;Slow down. See the way home.&quot;. Correct Traditional Chinese and punctuation, elegant readable ivory editorial typography. Keep text separate from faces and silhouettes. NO other lettering, tiny signature, logos or watermark.
+</code></pre>
+<p><strong>影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以新版 poster_opening.png 為首幀，單一連續鏡頭、無剪接。
+第 0–1 秒停留閱讀；第 1–4 秒小翎在高欄杆上輕轉頭，遠處阿澄沿階梯踏出一個小步，頸上唯一紅圍巾微擺；第 4–5 秒安定停留。鏡頭固定，不讓青年走近燕子。
+前導畫面；紅圍巾仍在青年頸部。近鳥遠人以透視造成表觀大小差，不是巨鳥。
+保持定稿角色、服裝、動物斑紋與比例，維持本片風格。四段原有文字『晚霞的方向』『Where Dusk Leads』『慢下來，才看見歸途。』『Slow down. See the way home.』全程固定原位、清晰不變，不變形、閃爍或新增字樣；文字層鎖定，只讓場景輕微活動。
+</code></pre>
+<p><strong>Video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical9:16, exactly5 seconds, use the REVISED poster_opening.png as first frame. One continuous shot, no cuts.
+Hold for reading during seconds0–1. During seconds1–4, Ling makes one small head turn on the high rail; distant Cheng takes ONE small stair step, the single scarf at his neck swaying gently. Hold still during seconds4–5. Locked camera; do not bring Cheng close to the bird.
+Prologue: the ONE scarf is still worn around Cheng's neck. A closer bird and distant man have different apparent sizes because of depth, not a giant bird.
+Preserve reference identity, clothing, animal markings and scale, and film style. Lock these original four text blocks exactly in place throughout: &quot;晚霞的方向&quot;, &quot;Where Dusk Leads&quot;, &quot;慢下來，才看見歸途。&quot;, &quot;Slow down. See the way home.&quot;. No distortion, flicker or new lettering; animate only the scene, typography static.
+</code></pre>
+<h3>片尾｜00:55–01:00｜巢邊望向遠去的背影</h3>
+<p>鏡位移到回巢屋簷下、靠近泥巢，朝外望向海與下行階梯。泥巢和小翎在右側近景，唯一紅圍巾繫在緊鄰的深色支柱上、結低於巢口；遠處下方只有一個阿澄的小背影正沿階梯離開，頸部沒有圍巾、不揮手。以安居的鳥巢、留下的紅色路標和青年離去的背影構成故事之後的餘韻，天空明亮溫暖。</p>
+<p><strong>狀態連續性</strong>：故事後記；青年頸部無圍巾，唯一紅圍巾留在支柱，小翎留在巢邊。保持樂觀、安心。</p>
+<p><a href="../assets/poster_ending.webp">查看新版片尾海報</a></p>
+<p><strong>海報圖像提示詞｜中文</strong></p>
+<pre><code class="language-text">用途：原創動畫片尾海報，直式 9:16，獨立新構圖。鏡位移到回巢屋簷下、靠近泥巢，朝外望向海與下行階梯。泥巢和小翎在右側近景，唯一紅圍巾繫在緊鄰的深色支柱上、結低於巢口；遠處下方只有一個阿澄的小背影正沿階梯離開，頸部沒有圍巾、不揮手。以安居的鳥巢、留下的紅色路標和青年離去的背影構成故事之後的餘韻，天空明亮溫暖。
+故事後記；青年頸部無圍巾，唯一紅圍巾留在支柱，小翎留在巢邊。保持樂觀、安心。
+嚴格沿用 character_cheng.png、character_ling.png 與 character_scale.png。阿澄 Cheng：20 歲青年，修長約 175 公分，黑色短髮帶鈷藍色面，藍黑眼睛；鈷藍短工作外套、米白無字圓領上衣、炭黑直筒褲、深色短靴與薄米白鞋底，無帽、無包、無首飾。小翎 Ling：小型燕子，黑藍頭背、鈷藍翅、朱赭喉斑、米白腹、細黑喙、兩條尖長叉尾；站高約 14 公分、全長約 20 公分、展翼約 30 公分，採角色圖的風格化比例。同景深時燕子站高約為青年身高的 1/12.5；不得變成鴿子、烏鴉或巨鳥。
+S11 鈷藍朱紅極簡平塗：大面積鈷藍、朱紅與墨黑，米白作小面積明亮焦點；乾淨銳利輪廓、兩到三階硬邊賽璐璐陰影、清楚剪影與大片負空間。細節集中於表情及關鍵動作。避免攝影寫實、厚塗、全圖柔焦、霓虹與繁密紋樣。
+角色設定圖僅作身份與比例參考；分鏡圖僅作環境、服裝、光色參考，禁止複製分鏡 01／10 的構圖、姿勢再加字。
+只加入四段文字：『晚霞的方向』『Where Dusk Leads』『慢下來，才看見歸途。』『Slow down. See the way home.』，繁體中文字形正確，標點完整，清晰排版，避開角色。沒有其他文字、署名、商標或浮水印。
+</code></pre>
+<p><strong>Poster image prompt｜English</strong></p>
+<pre><code class="language-text">Use case: illustration-story. ONE vertical9:16 original ending poster with a genuinely NEW camera position, staging and story moment. A NEW EPILOGUE viewpoint from UNDER THE HOME EAVE, very close to the nest, looking OUT toward the sea and descending roof steps. Foreground RIGHT: the same half-cup mud nest with ONE Ling resting peacefully at its rim, plus the adjacent dark post with the ONE red scarf tied BELOW the nest entrance. Do not block the bird with fabric. Far LOWER-CENTER beyond the eave, Cheng is a SMALL FULL-BODY BACK VIEW walking away down the stairway, under15% of image height, bare ivory shirt collar, NO scarf on neck and NO waving. Clear three-layer depth: nest/scarf near, stairway middle, luminous optimistic sea and dusk beyond. No large frontal man, no close-up human goodbye pose.
+Epilogue: Cheng's neck is bare, the ONE red scarf stays on the post, Ling stays at the nest. Warm, safe and optimistic.
+Strictly use character_cheng.png, character_ling.png and character_scale.png as identity and proportion references. Cheng: slim 20-year-old man, about 175 cm tall, short ink-black hair with cobalt highlight shapes, dark blue eyes, cropped cobalt work jacket, unprinted ivory crew-neck shirt, charcoal straight trousers, dark ankle boots with thin ivory soles, no hat, bag or jewelry. Ling: tiny stylized swallow with blue-black crown and back, cobalt wings, rusty-vermilion throat, ivory belly, small dark beak and two long pointed forked tail streamers; about 14 cm standing height, 20 cm beak-to-tail length, 30 cm wingspan. At equal depth its standing height is about 1/12.5 of Cheng's height, following the scale sheet. Never turn it into a pigeon, crow or giant bird.
+Modern graphic anime in the S11 direction: broad cobalt-blue, vermilion and ink-black color planes with ivory focal accents, crisp contours, only two or three hard-edged cel-shadow values, clear silhouettes and generous negative space. Detail concentrates on expression and the key action. No photorealism, heavy painterly texture, all-over blur, neon bloom or dense ornament.
+Input character sheets are ONLY for identity/proportions; environment still ONLY for architecture/style/color. Do NOT reproduce an existing shot01/shot10 composition with typography added. Render a fresh single scene, no collage or repeated characters. Render EXACTLY FOUR text blocks: &quot;晚霞的方向&quot; / &quot;Where Dusk Leads&quot; / &quot;慢下來，才看見歸途。&quot; / &quot;Slow down. See the way home.&quot;. Correct Traditional Chinese and punctuation, elegant readable ivory editorial typography. Keep text separate from faces and silhouettes. NO other lettering, tiny signature, logos or watermark.
+</code></pre>
+<p><strong>影片提示詞｜中文｜5 秒｜9:16</strong></p>
+<pre><code class="language-text">直式 9:16，正好 5 秒，以新版 poster_ending.png 為首幀，單一連續鏡頭、無剪接。
+第 0–1 秒保持巢邊構圖；第 1–3 秒遠處阿澄背影沿階梯緩步下降一階，支柱上的圍巾布尾輕擺，小翎安穩留巢、僅眨眼；第 3–5 秒讓暖色海面與歸巢畫面停留。固定鏡頭，不揮手、不飛走。
+故事後記；青年頸部無圍巾，唯一紅圍巾留在支柱，小翎留在巢邊。保持樂觀、安心。
+保持定稿角色、服裝、動物斑紋與比例，維持本片風格。四段原有文字『晚霞的方向』『Where Dusk Leads』『慢下來，才看見歸途。』『Slow down. See the way home.』全程固定原位、清晰不變，不變形、閃爍或新增字樣；文字層鎖定，只讓場景輕微活動。
+</code></pre>
+<p><strong>Video prompt｜English｜5 seconds｜9:16</strong></p>
+<pre><code class="language-text">Vertical9:16, exactly5 seconds, use the REVISED poster_ending.png as first frame. One continuous shot, no cuts.
+Hold the nest-side composition during seconds0–1. During seconds1–3, distant back-view Cheng descends ONE stair step. Scarf tails on the post drift slightly; Ling stays safely at the nest, only blinking. Hold the warm sea and homecoming afterglow during seconds3–5. Locked camera, no waving or flight.
+Epilogue: Cheng's neck is bare, the ONE red scarf stays on the post, Ling stays at the nest. Warm, safe and optimistic.
+Preserve reference identity, clothing, animal markings and scale, and film style. Lock these original four text blocks exactly in place throughout: &quot;晚霞的方向&quot;, &quot;Where Dusk Leads&quot;, &quot;慢下來，才看見歸途。&quot;, &quot;Slow down. See the way home.&quot;. No distortion, flicker or new lettering; animate only the scene, typography static.
+</code></pre>
+<p>海報四段文字須全程固定。若影片工具無法鎖定排字，可後製覆蓋原海報文字區，僅動畫化場景。舊海報與舊提示詞另存海報/舊版_20261023；正式生成請使用目前海報目錄及本節新版提示詞。</p>
+<h2>七、檔案、規格與檢查紀錄</h2>
+<ul>
+<li>使用內建 image_gen 生成與修正圖像，正式交付共 15 張 PNG；全部已存入本片資料夾。</li>
+<li>角色圖原始尺寸 1672×941。直式圖原始尺寸為 941×1672，部分為 941×1671。這些是生成工具輸出的近似 16:9／9:16 畫布，並非像素比例完全精確的 16:9／9:16。</li>
+<li>精確成片畫布設為 <strong>1080×1920、30 fps、60 秒</strong>；每段 150 幀，全片 1800 幀。圖片等比填滿畫布後居中微裁邊緣，不拉伸角色；尺寸取整造成的差異不到 0.12%。角色表若需精確輸出可同樣放入 1920×1080 畫布。原始 PNG 保留原樣。</li>
+<li>畫面主體、臉、叉尾與海報文字均須避開平台介面遮擋區；正式輸出時依目標平台介面預覽調整字幕位置。</li>
+<li>文字檢查：中英文標題及副標題一致；10 個小標題各 4 字；中文字幕各 7–8 字；英文使用短句。SRT 包含 10 段，從整片 00:05 至 00:55，片頭片尾不重複疊加字幕。</li>
+<li>圖像檢查：角色四視角與白背景、共同體型比例、10 張獨立分鏡、海報四段文字、燕子雙叉尾、回巢段紅圍巾位置均已逐圖目視檢查。人物側面、燕子比例、05 尾羽完整性及回巢段平塗風格曾修正，交付資料夾只收定稿。</li>
+<li>分鏡 09 採中近景呈現雙手動作，同時保留臉部與無圍巾的頸部，以清楚交代道具位置；定稿提示詞已同步更新。</li>
+<li>圖像參考能幫助維持外觀，但影片生成後仍須檢查臉部漂移、手指、鳥翅與叉尾變形、道具複製、文字穩定及實際片長。本輪靜態圖核對不代表動態成片已驗收。</li>
+<li><a >資產清單</a>記錄各圖原始尺寸、位元組數、SHA-256 與來源路徑，方便核對；<a href="../index.html">圖像總覽</a>提供離線瀏覽全部 15 張圖。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>交付項目</th>
+<th style="text-align: right;">數量</th>
+<th>狀態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>確認方案與雙語標題、副標題</td>
+<td style="text-align: right;">1 部</td>
+<td>已整理</td>
+</tr>
+<tr>
+<td>雙語分鏡說明與字幕</td>
+<td style="text-align: right;">10 鏡</td>
+<td>已校對</td>
+</tr>
+<tr>
+<td>雙語分鏡圖像提示詞</td>
+<td style="text-align: right;">10 組</td>
+<td>已整理</td>
+</tr>
+<tr>
+<td>雙語影片提示詞</td>
+<td style="text-align: right;">12 組</td>
+<td>已整理，包含片頭片尾</td>
+</tr>
+<tr>
+<td>獨立角色四視角</td>
+<td style="text-align: right;">2 張</td>
+<td>已生成、已目視檢查</td>
+</tr>
+<tr>
+<td>共同體型比例</td>
+<td style="text-align: right;">1 張</td>
+<td>已生成、已目視檢查</td>
+</tr>
+<tr>
+<td>海報</td>
+<td style="text-align: right;">2 張</td>
+<td>已生成、文字已目視檢查</td>
+</tr>
+<tr>
+<td>正式分鏡圖</td>
+<td style="text-align: right;">10 張</td>
+<td>已生成、已目視檢查</td>
+</tr>
+<tr>
+<td>中文字幕／英文字幕</td>
+<td style="text-align: right;">各 1 檔</td>
+<td>已建立</td>
+</tr>
+<tr>
+<td>動態影片／60 秒成片</td>
+<td style="text-align: right;">—</td>
+<td>未生成；本輪交付生成提示詞</td>
+</tr>
+</tbody>
+</table>
+<p>方案 02–10 保留原企劃，依原順序後續製作；其專屬分鏡、角色、海報與完整製作規格不在本輪標記完成。</p></body></html>
